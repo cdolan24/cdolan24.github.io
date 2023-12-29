@@ -4,15 +4,33 @@
     <meta charset="utf-8">
     <title>Connor Dolan's Portfolio</title>
     <style>
+      .item1 { grid-area: header; }
+      .item2 { grid-area: menu; }
+      .item3 { grid-area: information; }
+      .item4 { grid-area: writing; }
+      .item5 { grid-area: animation; }
+      .item6 { grid-area: film; }
+      .item7 { grid-area: cs; }
+      .item8 { grid-area: docs; }
+      .item9 { grid-area: prototypes; }
+
       .grid-container {
         display: grid;
-        grid-template-columns: auto auto auto;
+        grid-template-areas:
+        'header header header header header header'
+        'menu information information information information information information'
+        'menu writing writing writing writing writing writing';
+        'menu animation animation animation animation animation animation';
+        'menu film film film film film film';
+        'menu cs cs cs cs cs cs';
+        'menu docs docs docs docs docs docs';
+        'menu prototypes prototypes prototypes prototypes prototypes prototypes';
         background-color: #2196F3;
         padding: 10px;
       }
+
       .grid-item {
         background-color: rgba(255, 255, 255, 0.8);
-        border: 1px solid rgba(0, 0, 0, 0.8);
         padding: 20px;
         font-size: 30px;
         text-align: center;
