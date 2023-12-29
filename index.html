@@ -1,92 +1,189 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Connor Dolan's Portfolio</title>
-    <style>
-      .item1 { grid-area: header; }
-      .item2 { grid-area: menu; }
-      .item3 { grid-area: information; }
-      .item4 { grid-area: writing; }
-      .item5 { grid-area: animation; }
-      .item6 { grid-area: film; }
-      .item7 { grid-area: cs; }
-      .item8 { grid-area: docs; }
-      .item9 { grid-area: prototypes; }
+<html lang="en">
 
-      .grid-container {
-        display: grid;
-        grid-template-areas:
-        'header header header header header header'
-        'menu information information information information information information'
-        'menu writing writing writing writing writing writing';
-        'menu animation animation animation animation animation animation';
-        'menu film film film film film film';
-        'menu cs cs cs cs cs cs';
-        'menu docs docs docs docs docs docs';
-        'menu prototypes prototypes prototypes prototypes prototypes prototypes';
-        background-color: #2196F3;
-        padding: 12px;
-      }
-
-      .grid-item {
-        background-color: rgba(255, 255, 255, 0.8);
-        padding: 20px;
-        font-size: 20px;
-        text-align: center;
-      }
-    </style>
-  </head>
+<head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <meta charset="utf-8">
+  <title>Connor Dolan's Portfolio</title>
+</head>
 <!-- Title -->
-  <div class="grid-container">
-    <div class="grid-item">
-      <h1>Connor Dolan's Game Design Portfolio</h1>
-      <h3>Eagle Rock High School Class of 2024</h3>
-      <a href="https://www.instagram.com/cdolan24games/">Instagram: cdolan24games</a>
-    </div>
 
-<!-- Information -->
-    <div class="grid-item">
-      <p>I have been working in different areas of development for the majority of my life.</p>
-      <p>This portfolio aims to show my progression from creative writing to game development.</p>
+<body>
+  <div class="container-fluid bg-dark">
+    <!-- Title -->
+    <div class="col">
+      <div class="row flex-nowrap text-center bg-dark text-white">
+        <p>_____________________________________________________________________________________________________________</p>
+      </div>
+      <div class="row flex-nowrap text-center bg-dark text-white">
+        <h1>Connor Dolan's Game Design Portfolio</h1>
+      </div>
+      <div class="row flex-nowrap text-center bg-dark text-white">
+        <h3>Eagle Rock High School Class of 2024</h3>
+      </div>
+      <div class="row flex-nowrap text-center bg-dark text-white">
+        <span class="bg-dark text-white">
+          <i class="fa-brands fa-instagram"></i>
+          <a href="https://www.instagram.com/cdolan24games/">cdolan24games</a>
+          <i class="fa-brands fa-instagram"></i>
+        </span>
+      </div>
+      <div class="row flex-nowrap text-center bg-dark text-white">
+        <p><p>
+      </div>
+      <div class="row flex-nowrap text-center bg-dark text-white">
+        <p>
+          This portfolio aims to show my progression from creative writing to game development.
+        <p>
+      </div>
     </div>
+    <!-- Side Navigation (Ripped)-->
+    <div class="row flex-nowrap">
+      <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark">
+        <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
+          <a href="/" class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+            <span class="fs-5 d-none d-sm-inline">Navigation</span>
+          </a>
+          <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
+            <li class="nav-item">
+              <a href="#writing" class="nav-link align-middle px-0 text-white">
+                <i class="fs-4 bi-house"></i> <span class="ms-1 d-none d-sm-inline">Writing</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#animation" class="nav-link align-middle px-0 text-white">
+                <i class="fs-4 bi-house"></i> <span class="ms-1 d-none d-sm-inline">Animation</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#film" class="nav-link align-middle px-0 text-white">
+                <i class="fs-4 bi-house"></i> <span class="ms-1 d-none d-sm-inline">Film</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#computer-science" class="nav-link align-middle px-0 text-white">
+                <i class="fs-4 bi-house"></i> <span class="ms-1 d-none d-sm-inline">Computer Science</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#games" class="nav-link align-middle px-0 text-white">
+                <i class="fs-4 bi-house"></i> <span class="ms-1 d-none d-sm-inline">Game Prototypes</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#design-documents" class="nav-link align-middle px-0 text-white">
+                <i class="fs-4 bi-house"></i> <span class="ms-1 d-none d-sm-inline">Design Documents</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
 
-<!-- Writing -->
-    <div class="grid-item">
-      <h3>Writing</h3>
-      <p>Short to Long Form Stories, Game Systems (Night City Legends)
-      <p>.</p>
+      <div class="col py-3">
+        <div class="d-grid gap-3">
+
+          <div id="writing">
+            <div class="border border-light border-1 bg-dark text-white container-fluid">
+              <p></p>
+              <h2>Writing</h2>
+              <p>
+                Short to Long Form Stories, Game Systems (Night City Legends)
+
+                I've always had an interest in creative writing. When I was a kid,
+                I spent much of my free time writing stories of varying quality but immense length.
+                When the Covid-19 pandemic hit, I began to write with partners, manifesting myself as
+                characters I wrote and spending hours, days, weeks, writing long stories about them.
+                These characters would ultimately be the inspiration for what I animated later on, but
+                developing them through stories and scripts I wrote by myself and with others would be
+                especially important for building my game design knowledge. This character-centric style
+                of writing and partner collaboration was a gigantic influence on how I would later design
+                games. The games I write are always centered around the characters, the players, and how
+                they can interact with these designed fictitous worlds.
+              </p>
+              <p></p>
+              <p>
+                Another big influence for me was Tabletop RPGs, or TTRPGs. Games like Dungeons and Dragons,
+                Pathfinder, and especially GURPS are something that I've been playing for over a decade. I've
+                been to conventions, designed homebrew for my characters, done the whole nine yards. I have
+                dozens of D and D characters, but anyone can do that. What was important for me was when I
+                applied the character format to other things. To the characters in the short stories I wrote.
+                Breaking free of the rules of the system and creating my own, I wrote more character sheets
+                than I could keep track of. But that quickly graduated into creating my own game system
+                around what I knew.
+              </p>
+              <p></p>
+              <p>
+                Night City Legends is a text based RPG system that I wrote in inspiration from the
+                Cyberpunk 2077 videogame (or at least what it was supposed to be) and the inspiration
+                for the game, Cyberpunk 2020. The game is played on a Discord server that I created and
+                had moderators for, but the important part of the server is the character creation system.
+                Like most TTRPGs, Night City Legends revolves around building a character sheet with attributes
+                and equipment and going on adventures in the world of Cyberpunk, making rolls for your abilities
+                and installing cyberware to make your character more powerful. Each time you add augmentations
+                to your character, though, you get one step closer to going insane, which is vitally important
+                for the themes of madness and modding in the Cyberpunk IP. Night City, my character-driven RP
+                system has been playtested to some extent and remains wildly fun.
+              </p>
+            </div>
+          </div>
+
+          <div id="animation">
+            <div class="border border-light border-1 bg-dark text-white container-fluid">
+              <p></p>
+              <h2>Animation</h2>
+              <p>
+                Danny the Default Man (Technical Troubles) and other 3D Animations
+              </p>
+            </div>
+          </div>
+
+          <div id="film">
+            <div class="border border-light border-1 bg-dark text-white container-fluid">
+              <p></p>
+              <h2>Film</h2>
+              <p>
+                Sunset Comix Whatnot Streams/Social Media Management, Stage Combat, Social Media Management, Dash's Films
+              </p>
+            </div>
+          </div>
+
+          <div id="computer-science">
+            <div class="border border-light border-1 bg-dark text-white container-fluid">
+              <p></p>
+              <h2>Computer Science</h2>
+              <p>
+                This Portfolio, Splitkeeper, Inhuman, Discord Chatbot, Computer Science Club and Classes
+              </p>
+            </div>
+          </div>
+
+          <div id="games">
+            <div class="border border-light border-1 bg-dark text-white container-fluid">
+              <p></p>
+              <h2>Game Prototypes</h2>
+              <p>
+                Pinball Devlog
+              </p>
+            </div>
+          </div>
+
+          <div id="design-documents">
+            <div class="border border-light border-1 bg-dark text-white container-fluid">
+              <p></p>
+              <h2>Design Documents</h2>
+              <p>
+                Inhuman, Space Toboggan, Pinball and creating a variety of ideas on a whim
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-
-<!-- Animation -->
-    <div class="grid-item">
-      <h3>Animation and 3D Modeling</h3>
-      <p>Danny the Default Man (Technical Troubles) and other 3D Animations</p>
-    </div>
-
-<!-- Film -->
-    <div class="grid-item">
-      <h3>Film, Acting, and Stage Combat</h3>
-      <p>Sunset Comix Whatnot Streams/Social Media Management, Stage Combat, Social Media Management, Dash's Films</p>
-    </div>
-
-<!-- Computer Science -->
-    <div class="grid-item">
-      <h3>Computer Science</h3>
-      <p>This Portfolio, Splitkeeper, Inhuman, Discord Chatbot, Computer Science Club and Classes</p>
-    </div>
-
-<!-- Design Documents -->
-    <div class="grid-item">
-      <h3>Design Documents</h3>
-      <p>Inhuman, Space Toboggan, Pinball and creating a variety of ideas on a whim</p>
-    </div>
-
-<!-- Game Prototypes -->
-    <div class="grid-item">
-      <h3>Game Prototypes</h3>
-      <p>Pinball Devlog</p>
-    </div>
-
   </div>
-<html>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/f82f770130.js" crossorigin="anonymous"></script>
+
+</html>
