@@ -1,3 +1,3 @@
-# Connor Dolan Blog
+# Connor Dolan Game Design Portfolio
 
-Unlikely anyone will see this Readme
+Housing the assets and portfolio of Connor Dolan, HS Class of 2024
