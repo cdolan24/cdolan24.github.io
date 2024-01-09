@@ -9,7 +9,7 @@ Housing the assets and portfolio of Connor Dolan, HS Class of 2024
 <p>Danny the Default Man (Technical Troubles) and other 3D Animations</p>
 
 <h3>Film, Acting, and Stage Combat</h3>
-<p>Sunset Comix Whatnot Streams/Social Media Management, Stage Combat, Social Media Management, Dash's Films</p>
+<p>Sunset Comix Whatnot Streams/Social Media Management, Stage Combat, Social Media Management, Summer Camp, Dash's Films, Twitch.</p>
 
 <h3>Computer Science</h3>
 <p>This Portfolio, Splitkeeper, Inhuman, Discord Chatbot, Computer Science Club and Classes</p>
