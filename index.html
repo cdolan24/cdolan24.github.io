@@ -3,13 +3,13 @@
 
 <head>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <meta charset="utf-8">
   <title>Connor Dolan's Portfolio</title>
 </head>
 
 <body>
-  <div class="container-fluid bg-dark">
+  <div class="container-fluid bg-dark" id="top">
     <!-- Title -->
     <div class="col">
       <div class="row flex-nowrap text-center bg-dark text-white">
@@ -24,659 +24,768 @@
       <div class="row flex-nowrap text-center bg-dark text-white">
         <p>_____________________________________________________________________________________________________________</p>
       </div>
+
+
       <div class="row flex-nowrap text-center bg-dark text-white">
-        <p>Insert SLIDESHOW here</p>
+        <div class="col-md-2"><!--JustifyColTowardsRight--></div>
+        <div class="col-md-8">
+          <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="4500">
+                <img src="visuals/Screenshot_20240122_003136_Gallery.jpg" class="d-block w-100" alt="[Space Toboggan]">
+              </div>
+              <div class="carousel-item" data-bs-interval="4500">
+                <img src="visuals/Screenshot_20210903-213756_Gallery.jpg" class="d-block w-100" alt="[Inhuman]">
+              </div>
+              <div class="carousel-item" data-bs-interval="4500">
+                <img src="..." class="d-block w-100" alt="[Animation]">
+              </div>
+              <div class="carousel-item" data-bs-interval="4500">
+                <img src="..." class="d-block w-100" alt="[Film]">
+              </div>
+              <div class="carousel-item" data-bs-interval="4500">
+                <img src="..." class="d-block w-100" alt="[Computer Science]">
+              </div>
+              <div class="carousel-item" data-bs-interval="4500">
+                <img src="..." class="d-block w-100" alt="[Writing]">
+              </div>
+              <div class="carousel-item" data-bs-interval="4500">
+                <img src="..." class="d-block w-100" alt="[Prototypes]">
+              </div>
+            </div>
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
       </div>
+
       <div class="row flex-nowrap text-center bg-dark text-white">
         <p>_____________________________________________________________________________________________________________</p>
       </div>
       <div class="row flex-nowrap text-center bg-dark text-white">
         <span class="bg-dark text-white">
           <i class="fa-brands fa-twitch"></i>
-          <a href="https://www.instagram.com/cdolan24games/">cdolan24games</a>
+          <a href="https://www.twitch.tv/cdolan24games">cdolan24games</a>
           <i class="fa-brands fa-twitch"></i>
         </span>
       </div>
       <div class="row flex-nowrap text-center bg-dark text-white">
         <span class="bg-dark text-white">
           <i class="fa-brands fa-instagram"></i>
-          <a href="https://www.twitch.tv/cdolan24games">cdolan24games</a>
+          <a href="https://www.instagram.com/cdolan24games/">cdolan24games</a>
           <i class="fa-brands fa-instagram"></i>
         </span>
       </div>
       <div class="row flex-nowrap text-center bg-dark text-white">
+        <span class="bg-dark text-white">
+          <i class="fa-brands fa-readme"></i>
+          <a href="visuals/COL_CAR Resume.pdf" download> Resume - Jan 2024 </a>
+          <i class="fa-brands fa-readme"></i>
+        </span>
+      </div>
+      <div class="row flex-nowrap text-center bg-dark text-white">
         <p><p>
-      </div>
-      <div class="row flex-nowrap text-center bg-dark text-white">
-        <p>
-          Hi, I'm Connor! I'm a student-athlete at Eagle Rock Jr./Sr. High School, applying to many colleges and hopefully jobs in the Game Design industry.
-        </p>
-      </div>
-      <div class="row flex-nowrap text-center bg-dark text-white">
-        <p>
-          This portfolio aims to show my progression from creative writing to game development over the past few years, as well as be a home for a lot of the projects I've worked on.
-        </p>
-      </div>
-    </div>
-    <!-- Side Navigation (Ripped)-->
-    <div class="row flex-nowrap">
-      <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark">
-        <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
-          <a href="#" class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
-            <span class="fs-5 d-none d-sm-inline">
-              Navigation
-            </span>
-          </a>
-          <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
-            <li class="nav-item">
-              <a href="#inhuman" class="nav-link align-middle px-0 text-white">
-                <i class="fs-4 bi-house"></i> <span class="ms-1 d-none d-sm-inline">The Inhuman Story</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="#writing" class="nav-link align-middle px-0 text-white">
-                <i class="fs-4 bi-house"></i> <span class="ms-1 d-none d-sm-inline">Writing</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="#animation" class="nav-link align-middle px-0 text-white">
-                <i class="fs-4 bi-house"></i> <span class="ms-1 d-none d-sm-inline">Animation</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="#film" class="nav-link align-middle px-0 text-white">
-                <i class="fs-4 bi-house"></i> <span class="ms-1 d-none d-sm-inline">Film</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="#computer-science" class="nav-link align-middle px-0 text-white">
-                <i class="fs-4 bi-house"></i> <span class="ms-1 d-none d-sm-inline">Computer Science</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="#design-documents" class="nav-link align-middle px-0 text-white">
-                <i class="fs-4 bi-house"></i> <span class="ms-1 d-none d-sm-inline">Design Documents</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="#games" class="nav-link align-middle px-0 text-white">
-                <i class="fs-4 bi-house"></i> <span class="ms-1 d-none d-sm-inline">Game Prototypes</span>
-              </a>
-            </li>
-          </ul>
+        </div>
+        <div class="row flex-nowrap text-center bg-dark text-white">
+          <p>
+            Hi, I'm Connor! I'm a student-athlete at Eagle Rock Jr./Sr. High School, applying to many colleges and hopefully jobs in the Game Design industry.
+          </p>
+        </div>
+        <div class="row flex-nowrap text-center bg-dark text-white">
+          <p>
+            This portfolio aims to show my progression from creative writing to game development over the past few years, as well as be a home for a lot of the projects I've worked on.
+          </p>
         </div>
       </div>
-
-      <div class="col-1">qwertyuiop</div>
-
-      <div class="col py-3">
-        <div class="d-grid gap-3">
-
-          <div id="writing">
-            <div class="border border-light border-1 bg-dark text-white container-fluid">
-              <br>
-              <h2>
-                Writing
-              </h2>
-              <br>
-              <p>
-                I've always had an interest in creative writing. When I was a kid,
-                I spent much of my free time writing stories of varying quality but immense length.
-                When the Covid-19 pandemic hit, I began to write with partners, manifesting myself as
-                characters I wrote and spending hours, days, weeks, writing long stories about them.
-                These characters would ultimately be the inspiration for what I animated later on, but
-                developing them through stories and scripts I wrote by myself and with others would be
-                especially important for building my game design knowledge. This character-centric style
-                of writing and partner collaboration was a gigantic influence on how I would later design
-                games. The games I write are always centered around the characters, the players, and how
-                they can interact with these designed fictitous worlds.
-              </p>
-              <br>
-              <p>
-                Another big influence for me was Tabletop RPGs, or TTRPGs. Games like Dungeons and Dragons,
-                Pathfinder, and especially GURPS are something that I've been playing for over a decade. I've
-                been to conventions, designed homebrew for my characters, done the whole nine yards. I have
-                dozens of D and D characters, but anyone can do that. What was important for me was when I
-                applied the character format to other things. To the characters in the short stories I wrote.
-                Breaking free of the rules of the system and creating my own, I wrote more character sheets
-                than I could keep track of. But that quickly graduated into creating my own game system
-                around what I knew.
-              </p>
-              <br>
-              <p>
-                Night City Legends is a text based RPG system that I wrote in inspiration from the
-                Cyberpunk 2077 videogame (or at least what it was supposed to be) and the inspiration
-                for the game, Cyberpunk 2020. The game is played on a Discord server that I created and
-                had moderators for, but the important part of the server is the character creation system.
-                Like most TTRPGs, Night City Legends revolves around building a character sheet with attributes
-                and equipment and going on adventures in the world of Cyberpunk, making rolls for your abilities
-                and installing cyberware to make your character more powerful. Each time you add augmentations
-                to your character, though, you get one step closer to going insane, which is vitally important
-                for the themes of madness and modding in the Cyberpunk IP. Night City, my character-driven RP
-                system has been playtested to some extent and remains wildly fun.
-              </p>
-              <br>
-              <p>
-                [Night City Legends Character Sheet and Discord Server Screenshots]
-              </p>
-            </div>
-          </div>
-
-          <div id="animation">
-            <div class="border border-light border-1 bg-dark text-white container-fluid">
-              <p></p>
-              <h2>Animation</h2>
-              <p>
-                Before I knew I wanted to make a game, I thought that the best way to tell some of the stories
-                from one of the reoccuring worlds from my short stories would be through animations. Unfortunately,
-                I had no idea how to do this. My first foray into digital storytelling was through Blender's 3D
-                modeling program with a fully homemade and home-rigged model I called "Danny the Default Man",
-                who I modeled a body and clothes for by hand (and it shows).
-              </p>
-              <br>
-              <p>
-                [Danny the Default Man Picture Sketches and Final]
-              </p>
-              <br>
-              <p>
-                Having completed my model after a few weeks of bashing my head into the wall, I decided to try
-                animating this character. Unfortunately, it's now time for you to meet a good friend of mine.
-              </p>
-              <br>
-              <p>
-                [Marvin Picture]
-              </p>
-              <br>
-              <p>
-                This is Marvin. Marvin is my darling, my child, and my partner in crime. Unfortunately, Marvin
-                does not really do so well when it comes to... performance, which is something that a computer
-                might need when trying to render something like, I don't know, animations.
-              </p>
-              <br>
-              <p>
-                In trying to animate Danny the Default Man on his very first flight, I spent weeks wrestling
-                with my computer's poor performance and my lack of skills in both animation and optimization
-                at the time. The finished render was all of one frame per second (that is not a joke, the actual
-                number hovered between about 0.8 and 1.1) and was a general tragedy. That being said, I learned
-                a lot from this first animation, as you do when you're doing anything for the first time. I don't
-                have that particular video any more, but ultimately I ended up doing a lot more animations to get
-                my legs under me.
-              </p>
-              <br>
-              <p>
-                When I began work on
-                <a href="#inhuman">
-                  Inhuman
+      <!-- Side Navigation (Ripped)-->
+      <div class="row flex-nowrap sticky-top">
+        <div class="col-auto col-md-2 col-xl-2 px-sm-2 px-0 bg-dark">
+          <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
+            <a href="#" class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+              <span class="fs-5 d-none d-sm-inline">
+                Navigation
+              </span>
+            </a>
+            <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
+              <li class="nav-item">
+                <a href="#writing" class="nav-link align-middle px-0 text-white">
+                  <i class="fs-4 bi-house"></i> <span class="ms-1 d-none d-sm-inline">Writing</span>
                 </a>
-                , I wanted to learn
-                at least a little bit more animation for some of the gameplay. This prompted me to approach my Cartoon
-                Animation teacher and ask if I could work on 3D animations in class, which she agreed to facilitate. I
-                launched into a small spree of animations both in and out of class to hone my skills, to varying degrees
-                of success. Rather than using my own assets, I switched to the default Adobe Y-Bot for most of my later
-                animations because it came with a rig that was much more refined than my custom rigging job.
-              </p>
-              <br>
-              <p>
-                [Animation 1, 2, 3]
-              </p>
-              <br>
-              <p>
-                Some of the projects I've done were 24 hour challenges (though the time limitations were somewhat
-                soft) where I would try to make the best animation possible within the set amount of time. This was
-                especially convenient so I didn't spend too much time working on one thing and instead could move on
-                to the next project (or homework). You can definitely see some of the performance issues in the
-                computer and rendering.
-              </p>
-              <br>
-              <p>
-                [24 Hour renders and Postmortem]
-              </p>
-              <br>
-              <p>
-                I also spent some time working with static images and a bit of rendering to make sure I was, for
-                the most part at least, not the cause of some of the rendering issues on other projects.
-              </p>
-              <br>
-              <p>
-                [Static Images]
-              </p>
-            </div>
-          </div>
-
-          <div id="film">
-            <div class="border border-light border-1 bg-dark text-white container-fluid">
-              <p></p>
-              <h2>Film</h2>
-              <p>
-                Sunset Comix Whatnot Streams/Social Media Management, Stage Combat, Social Media Management, Summer Camp, Dash's Films, Twitch.
-              </p>
-              <br>
-              <p>
-                I've always made films. From my inagural cinematic masterpiece of "Jetpack Dude" (age __) to
-                summer camps where I did nothing but make films with my friends I've worked on a variety of
-                projects where I have acted, directed, written, edited, and generally composed film for over a
-                decade. While many of these films amounted to nothing, some of them served some utility. I'd say
-                out of all the different angles of game design, Film and Computer Science would be my strongest
-                subjects.
-              </p>
-              <br>
-              <p>
-                [Jetpack Dude!]
-              </p>
-              <br>
-              <p>
-                I did a bit of this work professionally, actually. I have been lucky enough to work in the comic
-                book industry for the last three and a half years at both the now shut down Sunset Comix and
-                participated in the opening of Torpedo World, Torpedo Comics' Topanga location. Both stores
-                had an active social media presence that I was frequently consulted on, given both my film
-                skills and the fact that I was part of an age demographic that the storefronts were trying to
-                appeal to. I made decisions about the way that both Torpedo and Sunset approached their media
-                and even promoted it on my personal page to try and bring in an audience from my age category,
-                which the company tried to cater to as best as possible.
-              </p>
-              <br>
-              <p>
-                [Sunset Comix Instagram Posts]
-              </p>
-              <br>
-              <p>
-                A big part of the work that I did in the comics industry came from our transition to online
-                and live sales. Sunset spent a fair amount of time streaming on an auctioning platform called
-                Whatnot, where our store manager would auction comics live on camera. My job was to do essentially
-                everything else, including facilitate the chat, make sure the stream was still running clearly
-                and intervene when it wasn't, adjust lighting and audio (this one was especially important given
-                that many of the higher value comics were in plastic covers that did not play well with any of our
-                lights), and even decide where the auctioned comics would go on the back wall for the best set
-                design. I took part in selling merchandise during a few of these streams to help promote them
-                but my job was largely video on the fly.
-              </p>
-              <br>
-              <p>
-                [Sunset Comix Picture]
-              </p>
-              <br>
-              <p>
-                Many of these live video skills transfer over to some of the video that I'm doing today. Finding
-                that being a solo developer is a lonely affair, I decided to stream some of my development process
-                on
-                <a href="https://www.twitch.tv/cdolan24games">Twitch</a>
-                to develop community, connections, and some of my game skills. This was especially challenging given
-                my computer's performance and difficulty in balancing streaming with the tools I needed for development.
-                You can find my very first stream VOD below.
-              </p>
-              <br>
-              <p>
-                [Stream VOD]
-              </p>
-              <br>
-              <p>
-                I used some of these skills to make small compilation reels for my own purposes. As a state
-                level student-athlete, I felt that recruitment would be something I was very interested in for
-                my college experience. To try and make this happen, I reached out to college coaches with a series
-                of recruitment letters, all of them pointing back to an Instagram I set up
-                <a href="https://www.instagram.com/athlete_connor_dolan/">@athlete_connor_dolan</a>.
-                This included very functional Instagram reels that were designed to showcase my progression in
-                times in a professional manner and occasionally highlight some of my strongest aspects as a runner.
-                I think this reel, which showcases a dominant last lap in the mile race, demonstrates what I was going
-                for with this page;
-              </p>
-              <br>
-              <p>
-                [Last Lap Reel]
-              </p>
-              <br>
-              <p>
-                I eventually decided that I would try to learn video in a setting I could reflect on my transcript.
-                I had become friends with my school's video teacher (different than the Animation teacher) when I had
-                tried to use his Stage Combat mats in my training for competitive parkour as a high school sophomore.
-                I ended up enrolling in that class, where I learned some of the physicality of acting, something I was
-                not especially good at before. This physicality ended up going into some videos I filmed to use as
-                references for animations.
-              </p>
-              <br>
-              <p>
-                [Stage Combat Demo]
-              </p>
-              <br>
-              <p>
-                Most importantly, I think, is the fact that I just like making films. I have a lot of friends who also
-                like making films. My mother is a feature film producer, my uncles are actors. I write film reviews in
-                my spare time. Films are just interesting to me, so I've made a fair amount of them. Below is one of my
-                favorite projects, which I did with one of my friends. We recorded footage together and decided to edit
-                the footage on our own to display our different editing styles.
-              </p>
-              <br>
-              <p>
-                [Dash Collaboration Video]
-              </p>
-            </div>
-          </div>
-
-          <div id="computer-science">
-            <div class="border border-light border-1 bg-dark text-white container-fluid">
-              <p></p>
-              <h2>Computer Science</h2>
-              <br>
-              <p>
-                Computer Science. The life blood of video games. This may not have been the first way that I entered the
-                game development cycle, but it quickly became the way that I want to continue up through the industry.
-                When I first began to work on my project
-                <a href="#inhuman">
-                  Inhuman
-                </a>, which became a bit of a flop for a variety of reasons,
-                I spent a lot of my time coding features rather than working on things like animations, which had been
-                something I was very interested in when I started the project. My focus on Computer Science in the last
-                two and a half years has been explosive, and I'd like to walk through it a little bit.
-              </p>
-              <br>
-              <p>
-                When I was first writing
-                <a href="#writing">
-                  text-based game systems on Discord
+              </li>
+              <li class="nav-item">
+                <a href="#animation" class="nav-link align-middle px-0 text-white">
+                  <i class="fs-4 bi-house"></i> <span class="ms-1 d-none d-sm-inline">Animation</span>
                 </a>
-                , I thought it might be interesting to have a native command for many of the randomized functions that
-                you would be doing in the game. Not finding any way to do this that already existed, I decided to create
-                a Discord chatbot that could handle some of these functions. Calling it Nataya, the bot was split into
-                two different entities, which were TempoBot (given that my handle on a fair amount of platforms is some
-                variation on the name Tempo), the bot that essentially served as my "main" branch in Github terms, and
-                the ScavengerBot entity, which was more in line with my "dev" branch. To undergo such a task, I asked for
-                help from my father, a mathematician and general computer-science man. He walked me through some of the
-                basics of Python, which was the language that the bot was written in. The project worked to some extent,
-                and was able to communicate with Discord in some capacity. The design of the bot is still mostly documented,
-                but to keep the bot active would require a server that I am not currently funding.
-              </p>
-              <br>
-              <p>
-                TempoBot functions were largely social, as that was what many of the people who were playtesting my system
-                wanted at the time. The idea was essentially to maintain character sheets and system rules inside the bot
-                and that way the system and characters could be distributed across a variety of different communities who
-                might want to use the game system for their own purposes. The bot could create random names, character
-                greetings, general character descriptors, and allow you to search "chests" for random drops.
-              </p>
-              <br>
-              <p>
-                [TempoBot and ScavengerBot Help Menu and Functions]
-              </p>
-              <br>
-              <p>
-                Another small project I worked on was very different in nature. I am a
-                <a href="https://www.instagram.com/athlete_connor_dolan/">distance running athlete</a>
-                in both Track and Field and Cross Country, and while my sport doesn't require much more than a good pair
-                of running shoes, I still found myself repeatedly frustrated by the nature of many runkeeper apps. In
-                distance running, one of the more popular ways to train is by doing laps around the track at a specific
-                pace with a specific rest. This takes a few different forms, sometimes in longer tempo runs, sometimes in
-                something called VO2 max, but the formula itself is largely the same. The issue I encountered was simply
-                human error; I always forgot to turn off my watch and check the time. So I thought "what if there was a
-                way to automatically stop the watch when you finished your lap?" This launched a very quick design process
-                of a Samsung smartwatch application that I called "Splitkeeper". Splitkeeper was written with an API called
-                Tizen, which uses C# and is designed exclusively for Samsung smart-device development, like TVs and wearables,
-                which serves me and my products which are primarily Samsung. Unfortunately, Tizen has the kind of documentation
-                and functionality that makes it... lets say
-                <a href="https://www.theregister.com/2017/07/12/samsungs_tizen_no_longer_worst_ever/">"known"</a>
-                among programmers, so the project has moved somewhat and as of right now is on indefinite hard-stop until my
-                watch gets fixed. It was broken during a Cross Country meet and I have been unable to fix it as of right now.
-              </p>
-              <br>
-              <p>
-                [Splitkeeper Doc]
-              </p>
-              <br>
-              <p>
-                The final project I'd like to bring up is actually my most recent. When I was starting my application
-                process for colleges, many of the places I was applying to wanted me to submit a portfolio, which I
-                did not have on hand. So, me being me, I went through the options in my head. I could submit a bunch of
-                stray files on a document next to some videos of things I've done. I could go to something like Wix and
-                have a drag and drop website with everything I needed on it. Or, and hear me out, I could spend the little
-                time I had on my breaks from cleaning up application essays to learn a language and an API that I was
-                unfamiliar with to build a website for a simple purpose. So anyway, I learned HTML in about three hours, set
-                up the Github repository, and went off. My aforementioned computer-science-man father directed me towards
-                Bootstrap as I struggled with somewhat inferior systems. That repository now holds all of my scattered files
-                which should be represented on this portfolio.
-              </p>
-              <br>
-              <p>
-                [Github Repository Images and the screenshot you're taking right now]
-              </p>
-              <br>
-              <p>
-                When I figured out how much I liked the Computer Science side of things, or at least scripting, I decided
-                that getting more of an education than just YouTube videos might be beneficial. Most of the education I had
-                in Computer Science had come from simply looking up potential solutions and documentations while stumbling
-                around until I fixed most of the bugs in whatever it was that I was building. So I took steps to learn
-                properly. Trying to sign up for the AP Computer Science class offered at my school, my counselor told me
-                that there would be no way to take that class without dropping one of my other APs, so I settled for the
-                step down: AP Computer Science Principles. I also took a community college class during the school session
-                to continue the education I'd started over myself in the summer with Computer Science 101. Computer Science
-                102 was a way of looking at CS to see if it was something I wanted to continue in. Next semester, I plan to
-                continue with Computer Science 112, Intro to C++, which is the language that Unreal utilizes. Unreal is the
-                engine that I'm spending a lot of my time in recently, so C++ feels like the best way to start on my education.
-                I'm also one of the very first members of the Computer Science Club at my Eagle Rock High School and I get to
-                use that platform to spend time with other likeminded people.
-              </p>
-              <br>
-              <p>
-                [Computer Science Club Pictures]
-              </p>
-              <p>
-                And finally, the biggest part of the learning curve for my very first project
-                <a href="#inhuman">
-                  Inhuman
+              </li>
+              <li class="nav-item">
+                <a href="#film" class="nav-link align-middle px-0 text-white">
+                  <i class="fs-4 bi-house"></i> <span class="ms-1 d-none d-sm-inline">Film</span>
                 </a>
-                were the computer
-                science aspects. Given that the game revolved around a variety of abilities your character could use
-                and systems to change these abilities as their first priority, most of what I did on that project was
-                writing scripts. Inhuman was meant to be written in the Unity Engine, which revolves around C#, so I
-                spent a lot of my time writing features for the game in C# rather than working on assets. Most of where
-                I ended up with Inhuman, which in theory was going to be this masterpiece with high-end graphics and
-                animations that I seemed to think would just happen, actually turned out to be a handwritten controller
-                moving a cube across a small city set with a bunch of crazy abilities going off on button commands. Though
-                the project ultimately was a failure, I learned a lot of C# and about the process of coding within the
-                framework of a game engine. One of the big lessons I learned is actually one that will make it very hard
-                to display in image or video format on this page, and that is the organization of my files. Inhuman has
-                two Github repositories, and I can't decide which one is messier. I will attempt to show some of the
-                script files but I can't promise that they'll be elegant.
-              </p>
-              <br>
-              <p>
-                [Scripts and Repositories for Inhuman]
-              </p>
-            </div>
+              </li>
+              <li class="nav-item">
+                <a href="#computer-science" class="nav-link align-middle px-0 text-white">
+                  <i class="fs-4 bi-house"></i> <span class="ms-1 d-none d-sm-inline">Computer Science</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#inhuman" class="nav-link align-middle px-0 text-white">
+                  <i class="fs-4 bi-house"></i> <span class="ms-1 d-none d-sm-inline">Inhuman</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#covid" class="nav-link align-middle px-0 text-white">
+                  <i class="fs-4 bi-house"></i> <span class="ms-1 d-none d-sm-inline">COVID Experience</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#space-toboggan" class="nav-link align-middle px-0 text-white">
+                  <i class="fs-4 bi-house"></i> <span class="ms-1 d-none d-sm-inline">Space Toboggan! (Ongoing)</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#prototypes" class="nav-link align-middle px-0 text-white">
+                  <i class="fs-4 bi-house"></i> <span class="ms-1 d-none d-sm-inline">Game Prototypes</span>
+                </a>
+              </li>
+            </ul>
           </div>
+        </div>
 
-          <div id="design-documents">
-            <div class="border border-light border-1 bg-dark text-white container-fluid">
-              <p></p>
-              <h2>Design Documents</h2>
-              <p>
-                Inhuman, Space Toboggan, Pinball and creating a variety of ideas on a whim
-              </p>
-              <br>
-              <p>
-                Design Documents are interesting. Lots of people keep a sketchbook, maybe for doodling and such, but the
-                notes I keep are much less about the drawings and more about the notes themselves. I'm always thinking
-                up new games, new stories, and new mechanics, which I draw everywhere. Everywhere as in actually everywhere,
-                from an actual notebook to some of the Samsung notes to the Discord server I use to keep notes and images.
-                One time I had nothing to write on as I was thinking about a movement system so I scrawled notes all over
-                my thighs, which seemed like the largest canvas at the time. For this portfolio, I will only showcase documents
-                that I actually intend to use for future projects as well as some of the design documents I used for previous
-                projects.
-              </p>
-              <br>
-              <div id="inhuman">
-                  <h4>
-                    The Inhuman Story
-                  </h4>
-                  <p>
-                    When I was in sophomore year, I was well into the weeds of my <a href= #animation>animation</a> journey.
-                    However, part of the curriculum for the International Baccalauriate Diploma Program that our school
-                    takes part in is that sophomores have to make what is called the "Personal Project". The IBDP Personal
-                    Project is an assignment that, quite frankly, is easy to get away with doing something easy. So what did
-                    I do?
-                  </p>
-                  <br>
-                  <p>
-                    Not that!
-                  </p>
-                  <br>
-                  <p>
-                    Lots of my friends took the easy way out. The amount of cookbooks that were made for the IBDP
-                    Personal Project was truly ridiculous. But 10th grade Connor Dolan, in his infinite wisdom,
-                    decided to capitalize on his animation skills that he had accrued over the 10th grade summer
-                    to make a video game based on some of the <a href= #writing>stories he had written</a> over
-                    the COVID-19 pandemic. This game would be an open-world superhero game similar to Sucker
-                    Punch's inFamous Second Son on the PS4, which has been my favorite game since I first played
-                    it at a friend's house when I was way too young to be playing M rated games. I didn't really
-                    have any idea how to... yknow... build games, but I had the gifts of gumption and ignorance.
-                  </p>
-                  <br>
-                  <p>
-                    As I began to design, something I took very seriously for a project that should realistically
-                    have taken me about 10 hours, my imagination, which was already slipping away from my skills,
-                    really took off sprinting. I wanted to add multiplayer and
-                    <a href= #computer-science>high definition graphics</a>
-                    and generally create the superhero game of my dreams. I spent my mandatory gym class writing
-                    on a massive design document, filling it with mechanics I wanted to add but had no idea how
-                    to implement. Every video I watched to try and learn how to build a game like this told me
-                    to simply not, but arrogance blinded me as I trudged forwards. Unity seemed the most accessible
-                    circa 2021, even if I didn't really understand the technical limitations of engines yet, so I
-                    spent a lot of time working in Unity. Rather than trying to come at the project from different
-                    angles and build up gradually, I stalwartly refused to take the "easy" (smart) way through the
-                    problem, which of course created problems. Messy projects, poorly written scripts, corrupt files,
-                    you name it, all of this happened during the Inhuman development project. Given that my grit had
-                    served me well during my nightmarish Covid-19 experience where I was forced to redo massive chunks
-                    of my work throughout the semester, I trekked on, mistaking the resolve it had taken to get through
-                    something outside of my control for the stubbornness it takes to not change course when the answer
-                    is clearly wrong. I simply assumed my "dedication" would pay off later on.
-                  </p>
-                  <br>
-                  <p>
-                    It didn't. My design document grew exponentially while my skills grew linearly. It made me question
-                    if I even wanted to be doing this, and while I learned a lot through the process, I ultimately limped
-                    across the 10th grade personal project finish line with a presentation of my design document. I had
-                    learned a lot, including C#, Blender, Mixamo and other Adobe products, and Unity, but the project I
-                    still consider one of my bigger failures.
-                  </p>
-                  <br>
-                  <p>
-                    [Inhuman Presentation]
-                  </p>
-                  <br>
-                  <p>
-                    The only thing that I think I did fairly well in terms of Inhuman was the design document. While the
-                    game suffered from a lot of core design issues, I will say that a fair amount of the game mechanics
-                    were interesting and fairly consistent. The game was meant to be about a character that was able to
-                    change their powers and abilities on the fly to suit the player's specific style of play. All of this was
-                    documented in a Google Site, which you can sort of see in the Presentation but I'll be sure to list down
-                    below. The design document also held some of the major locations that would come into play and a lot of
-                    miscellaneous design notes.
-                  </p>
-                  <br>
-                  <p>
-                    [Inhuman Game Mechanics]
-                  </p>
-                  <br>
-                  <p>
-                    The design document mostly held something that I had proven I was very good at, which was story. The
-                    Google Site held main story missions similar to that of inFamous, complete with character sheets and
-                    powers (movesets) for many of the enemies. These character sheets and designs were massive and detailed,
-                    but in the scheme of making an actual game were fairly useless. All told, the design document could be
-                    classified as a small novel.
-                  </p>
-                  <br>
-                  <p>
-                    [Inhuman Character Sheets]
-                  </p>
-                  <br>
-                  <p>
-                    While it was largely a failure, Inhuman was a phenomenal learning experience for me and ended up launching
-                    me into even more projects with renewed passion, hoping to one day be skilled enough to build Inhuman or
-                    something like it.
-                  </p>
-                  <br>
-                  <h4>
-                    Space Toboggan!
-                  </h4>
-                  <br>
-                  <p>
-                    Having recently learned what scope creep is, my goal in designing whatever my next project might be 
-                    would have to revolve around simplicity. Rather than designing a tiny project, I decided to build 
-                    something that would start off small with the potential to get much bigger as my skills grew. The 
-                    simple version could be released on its own, with the more complex parts being added in later to 
-                    create a more polished and hopefully engaging product. This approach to breaking the larger project 
-                    into smaller games would be very helpful in my learning later on.
-                  </p>
-                  <br>
-                  <p>
-                    [Connor Dolan's Space Toboggan! Logo] 
-                  </p>
-                  <br>
-                  <p>
-                    ARTEMIS : The concept for Space Toboggan comes from two of my favorite games of all time. Artemis Spaceship 
-                    Bridge Simulator is a game I picked up at a Dungeons and Dragons convention. The game consists of 
-                    a group of people on local multiplayer, ideally played in a large room like how it was structured 
-                    at the convention, with each person adopting a role on a spaceship similar to Star Trek. The result 
-                    is a bunch of people all shouting across the room to each other to work in symbiosis to execute trades, 
-                    engage in combat, and fly through the stars. As I played, I watched the ship creep across the stage, 
-                    often times having nothing to do in a specific role. I wondered if there was a way to cut out the fat 
-                    to make a more engaging experience.
-                  </p>
-                  <br>
-                  <p>
-                    [Strategicon Picture]
-                  </p>
-                  <br>
-                  <p>
-                    TEMPEST : The other massive influence was an arcade game from the 80s, Tempest. Tempest has been perhaps my 
-                    favorite arcade game of all time since I first found a cabinet in elementary school. I actually 
-                    played so much that I would get into high score competitions with my boss while I worked in the 
-                    comic shop. I bought a Tempest shirt and wore it until it was destroyed. I love the game, and I 
-                    know it well. To explain, Tempest is a shooter game where the player looks down a tube and has to 
-                    shoot incoming enemies. Its a fast paced game, and when thinking about ways to cut out the fat in 
-                    the Artemis experience, it wasn't long before I thought of Tempest. The result of combining the 
-                    two resulted in the design for a fast paced multiplayer arcade game that incorporated modern and 
-                    retro elements.
-                  </p>
-                  <br>
-                  <p>
-                    [Tempest Shirt]
-                  </p>
-                  <br>
-                  <p>
-                    APPROACH : Before getting too far down the design pipeline, I knew that I had to keep a firm grip on scope 
-                    before repeating the same mistake I had with Inhuman. I also felt that creating such a massive 
-                    game would destroy the arcade origins of the design (part of the reason I incorporated them!) 
-                    So, each step of the way in designing this game, I asked myself how feasable it was for me to 
-                    actually program this project. I looked up specific YouTube tutorials and documentation to make 
-                    sure that there would be resources I could use for each feature I decided to code in the game. 
-                    Even if the game was a short arcade-style game, I still was extra cautious with the design. To 
-                    make sure that my goals were attainable, I split the project (which I called "Space Toboggan" 
-                    as the design process started and it just sort of stuck) into three smaller games.
-                   
-                  </p>
+        <div class="col py-2">
+          <div class="d-grid gap-3">
+            <div id="writing">
+              <div class="border border-light border-1 bg-dark text-white container-fluid">
+                <br>
+                <h2>
+                  Writing
+                </h2>
+                <br>
+                <p>
+                  I've always had an interest in creative writing. When I was a kid, I spent much of my free time writing stories of varying quality but immense length. When the Covid-19 pandemic hit, I began to write with partners, manifesting myself as characters I wrote and spent hours, days, weeks, writing long stories about them. These characters would ultimately be the inspiration for what I animated later on, but developing them through stories and scripts would be especially important for building my game design knowledge. This character-centric style of writing and partner collaboration was also a gigantic influence on how I would later design games. The games I write are always centered around the characters, the players, and how they can interact with these designed fictitious worlds.
+                </p>
+                <br>
+                <p>
+                  Another big influence for me was Tabletop RPGs, or TTRPGs. Games like Dungeons and Dragons, Pathfinder, and especially GURPS are something that I've been playing for over a decade. I've been to conventions, designed homebrew for my characters, done the whole nine yards. I have dozens of D and D characters, but anyone can do that. What was important for me was when I applied the character-centric format to other things. Breaking free of the rules of other systems and creating my own, I wrote more character sheets than I could keep track of. But that quickly graduated into creating my own game system around what I knew.
+                </p>
+                <br>
+                <p>
+                  Night City Legends is a text based RPG system that I wrote in inspiration from the Cyberpunk 2077 videogame (or at least what the game was supposed to be) and the TTRPG it was based on, Cyberpunk 2020. The game is played on a Discord server that I created and appointed moderators to, but the important part of the server is the character creation system. Like most TTRPGs, Night City Legends revolves around building a character sheet with attributes and equipment and going on adventures in the world of Cyberpunk, making rolls for your abilities and installing cyberware to make your character more powerful. Each time you add augmentations to your character, though, you get one step closer to going insane, which is vitally important for the themes of madness and body augmentation in the Cyberpunk IP. Night City Legends, my character-driven RP system, has been playtested to some extent and remains wildly fun.
+                </p>
+                <br>
+                <img src="visuals/LegendsBanner.jpg" class="rounded img-fluid" alt="[Night City Legends Character Sheet and Discord Server Screenshots]">
+                <p></p>
               </div>
             </div>
-          </div>
 
-          <div id="games">
-            <div class="border border-light border-1 bg-dark text-white container-fluid">
-              <p></p>
-              <h2>Game Prototypes</h2>
-              <p>
-                Pinball Devlog
-              </p>
-            </div>
-          </div>
-        </div>
-        <p>
-          INSERT GOODBYE IMAGE HERE [Me working on some static rendering circa summer 2022]
-        </p>
-      </div>
-      <div class="col-3">qwertyuiop</div>
-    </div>
-  </div>
-</body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-<script src="https://kit.fontawesome.com/f82f770130.js" crossorigin="anonymous"></script>
+            <div id="animation">
+              <!-- Title -->
+              <div class = "border border-light border-1 bg-dark text-white container-fluid">
+                <p></p>
+                <h2>Animation</h2>
+                <br>
+                <div class = "row">
 
-</html>
+                  <div class="col-md-8">
+                    <div class="row">
+                      <div class="col-md-4">
+                        <img src="visuals/unknown-10.png" class="rounded img-fluid" alt="[Danny the Default Man Picture Sketches and Final]">
+                      </div>
+
+                      <div class="col-md-7">
+                        <img src="visuals/unknown2.png" class="rounded img-fluid" alt="[Danny the Default Man Picture Sketches and Final]">
+                      </div>
+                      <p></p>
+                      <div class="col-md-5">
+                        <img src="visuals/unknown3.png" class="rounded img-fluid" alt="[Danny the Default Man Picture Sketches and Final]">
+                      </div>
+                      <div class="col-md-3">
+                        <img src="visuals/20210425_174000.jpg" class="rounded img-fluid" alt="[Danny the Default Man Picture Sketches and Final]">
+                      </div>
+                      <div class="col-md-3">
+                        <img src="visuals/20210425_175338.jpg" class="rounded img-fluid" alt="[Danny the Default Man Picture Sketches and Final]">
+                      </div>
+                      <p></p>
+                      <div class="row">
+                        <video controls class="object-fit-contain">
+                          <source src="visuals/final_6268ac02627457005f443890_12670.mp4" type="video/mp4">
+                            [Animation 1, 2, 3]
+                          </video>
+                        </div>
+                        <p></p>
+                        <div class="row">
+                          <video controls class="object-fit-contain">
+                            <source src="visuals/Screen_Recording_20231228_174836_Instagram_1.mp4" type="video/mp4">
+                              [24 Hour renders and Postmortem]
+                            </video>
+                          </div>
+                          <p></p>
+                          <div class="row">
+                            <video controls class="object-fit-contain">
+                              <source src="visuals/Screen_Recording_20231228_174836_Instagram_2.mp4" type="video/mp4">
+                                [24 Hour renders and Postmortem]
+                              </video>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-4 border border-light border-1 bg-dark text-white container-fluid">
+                          <p></p>
+                          <p>
+                            Before I knew I wanted to make a game, I thought that the best way to tell some of the stories from one of the reoccuring worlds from my short stories would be through animations. Unfortunately, I had no idea how to do this. My first foray into digital storytelling was through Blender's 3D modeling program with a fully homemade and home-rigged model I called "Danny the Default Man", who I modeled a body and clothes for by hand (and it shows).
+                          </p>
+                          <br>
+                          <p>
+                            Having completed my model after a few weeks of bashing my head into the wall, I decided to try animating this character. Unfortunately, it's now time for you to meet a good friend of mine, Marvin. Marvin is my computer, my darling, my child, and my partner in crime. Unfortunately, Marvin does not really do so well when it comes to... performance, which is something that a computer might need when trying to render something like, I don't know, animations.
+                          </p>
+                          <br>
+                          <p>
+                            In trying to animate Danny the Default Man on his very first flight, I spent weeks wrestling with my computer's poor performance and my lack of skills in both animation and optimization at the time. The finished render was all of one frame per second (that is not a joke, the actual number hovered between about 0.8 and 1.1) and was generally a tragedy. That being said, I learned a lot from this first animation, as you do when you're doing anything for the first time. I don't have that particular video any more, but ultimately I ended up doing a lot more animations to get my legs under me.
+                          </p>
+                          <br>
+                          <p>
+                            When I began work on my
+                            <a href="#inhuman"> IB Personal Project “Inhuman,”</a>
+                            I wanted to learn at least a little bit more animation for some gameplay. This prompted me to approach my Cartoon Animation teacher and ask if I could work on 3D animations in class, which she agreed to facilitate. I launched into a small spree of animations with the default Adobe Y-Bot both in and out of class to hone my skills, to varying degrees of success.
+                          </p>
+                          <br>
+                          <p>
+                            Some of the projects I've done were 24 hour challenges (though the time limitations were somewhat soft) where I would try to make the best animation possible within the set amount of time. This was especially convenient so I didn't spend too much time working on one thing and instead could move on to the next project (or homework). You can definitely see some of the performance issues in the computer and rendering.
+                          </p>
+                          <br>
+                          <p>
+                            I also spent some time working with static images and a bit of rendering to make sure I was, for the most part at least, not the cause of some of the rendering issues on other projects.
+                          </p>
+                        </div>
+                        <p></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <br>
+
+                <div id="film">
+                  <div class="border border-light border-1 bg-dark text-white container-fluid">
+                    <p></p>
+                    <h2>Film</h2>
+                    <br>
+                    <div class="border border-light border-1 bg-dark text-white container-fluid">
+                      <p></p>
+                      <p>
+                        I've always made films. From my inaugural cinematic masterpiece of "Jetpack Dude" (age __) to summer camps where I did nothing but make films with my friends, I've worked on a variety of projects where I have acted, directed, written, edited, and generally composed film for over a decade.
+                      </p>
+                    </div>
+                    <div class="row"> <br><br><!-- Break --> </div>
+                    <div class="row">
+                      <div class="col-sm-9">
+                        <p> [First Stream VOD] </p>
+                      </div>
+
+                      <div class="col-sm-3 border border-light border-1 bg-dark text-white container-fluid">
+                        <p></p>
+                        <p>
+                          Finding that being a solo developer is a lonely affair, I decided to stream some of my learning process on
+                          <a href="https://www.twitch.tv/cdolan24games">Twitch</a>
+                          to develop community, connections, and game design skills. This was especially challenging given my computer's performance and difficulty in balancing streaming with the tools I needed for development. You can find my very first stream VOD to the left and my live feed below.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="row"> <br><br><!-- Break --> </div>
+
+                    <div class="row">
+                      <script src="https://embed.twitch.tv/embed/v1.js"></script>
+                      <div class="embed-responsive embed-responsive-16by9" id="alivestream"></div>
+                      <script type="text/javascript">
+                         new Twitch.Embed("alivestream", {
+                          width: '100%',
+                          height: '100%',
+                          channel: "cdolan24games" 
+                         });
+                      </script>
+                    </div>
+
+                    <div class="row"> <br><br><!-- Break --> </div>
+
+                    <div class="row">
+                      <div class="border border-light border-1 bg-dark text-white container-fluid">
+                        <p></p>
+                        <p>
+                          I picked up a lot of streaming know-how from my work, actually. I have been lucky enough to work in the comic book industry for the last three and a half years at both Sunset Comix (defunct) and Torpedo World, Torpedo Comics' Topanga location. Both stores had an active social media presence that I was frequently consulted on, given both my film background and my age demographic. I made decisions about the way that both Torpedo and Sunset approached their media and even promoted it on my personal page to try and bring in an audience from my age category to moderate success.
+                        </p>
+                        <br>
+                        <p>
+                          A big part of the work that I did in the comics industry came from our transition to online and live sales. Sunset spent a fair amount of time streaming on an auctioning platform called Whatnot, where our store manager would auction comics live on camera. My job was to do essentially everything else not on camera, including facilitate the chat, keep an eye on quality and intervene when things broke, adjust lighting and audio (this one was especially important given that many of the higher value comics were in plastic covers that did not play well with any of our lights), and even decide where the auctioned comics would go for the best set design. I was on camera to sell a few times, but my job was largely video on the fly.
+                        </p>
+                      </div>
+                      <p></p>
+                      <br>
+                      <div class="col-md-4">
+                        <img src="visuals/20220514_124344.jpg" class="img-fluid" alt="[Sunset Comix Instagram Posts]">
+                      </div>
+                      <div class="col-md-4">
+                        <img src="visuals/Untitled-2.png" class="img-fluid" alt="[Sunset Comix Picture]">
+                      </div>
+                      <div class="col-md-4">
+                        <img src="visuals/20221203_170200.jpg" class="img-fluid" alt="[Sunset Comix Instagram Posts]">
+                      </div>
+                    </div>
+
+                    <div class="row"> <br><br><!-- Break --> </div>
+
+                    <div class = "row">
+                      <div class="col-md-3">
+                        <img src="visuals/image.png" class="img-fluid" alt="[Sunset Comix Instagram Posts]">
+                      </div>
+                      <div class = "col-sm-6">
+                        <div class = "border border-light border-1 bg-dark text-white container-fluid">
+                        <p></p>
+                        <p>
+                          I used some of my editing skills to make small compilation reels for my own purposes. As a state level student-athlete, I felt that recruitment would be something I was very interested in for my college experience. To try and make this happen, I reached out to college coaches with a series of recruitment letters, all of them pointing back to an Instagram I set up
+                          <a href="https://www.instagram.com/athlete_connor_dolan/">@athlete_connor_dolan</a>.
+                           This included very functional Instagram reels that were designed to showcase my progression and occasionally highlight some of my strongest aspects as a runner. I think the reel to the right, which showcases a dominant last lap in the mile race, demonstrates what I was going for with this page.
+                         </p>
+                       </div>
+                       <br>
+                       <div class = "border text-center border-light border-1 bg-dark text-white container-fluid">
+                         <p></p>
+                         <p> FOR ATHLETIC RECRUITMENT INQUIRIES, BE SURE TO
+                           <a href="mailto:cdolanforcollege@gmail.com" target="_blank">EMAIL</a>
+                           OR
+                           <a href="https://www.instagram.com/athlete_connor_dolan/">DM</a>
+                           ME</p>
+                           <a href="https://www.athletic.net/athlete/19721890/cross-country/high-school">Follow my times!</a>
+                           <p></p>
+                        </div>
+                      </div>
+                        <div class = "col-sm-3 container-fluid">
+                          <div class = "row">
+                          <video controls class="object-fit-contain">
+                            <source src="visuals/Screen_Recording_20240122_002808_Instagram.mp4" type="video/mp4">
+                              [Last Lap Reel]
+                          </video>
+                        </div>
+                      </div>
+                        <br>
+                      </div>
+
+                          <div class="row"> <br><br><!-- Break --> </div>
+
+                          <div class = "row">
+                            <div class = "col-sm-4 container-fluid">
+                              <video controls class="object-fit-contain">
+                                <source src="..." type="video/mp4">
+                                  [Dash Collaboration Video]
+                              </video>
+                            </div>
+                            <div class = "col-sm-8 border border-light border-1 bg-dark text-white container-fluid">
+                              <p></p>
+                              <p>
+                                Most importantly, I think, is the fact that I just like making films. I have a lot of friends who also like making films. My mother is a feature film producer, my uncles are actors. I write film reviews in my spare time. Film is just interesting to me, so I've spent a fair amount of time making them. This (left) is one of my favorite projects, which I did with one of my friends. We recorded footage together and decided to edit the footage on our own to display our different editing styles.
+                              </p>
+                            </div>
+                          </div>
+
+                          <div class="row"> <br><br> <!-- Break --> </div>
+
+                          <div class = "row">
+                            <div class = "border border-light border-1 bg-dark text-white container-fluid">
+                              <br>
+                              <p>
+                                Not all of the video I did was off -record. I became friends with my school's video teacher when I had tried to use his Stage Combat mats in my training for competitive parkour early into high school. I ended up enrolling in that class, where I learned some of the physicality of acting, something I was not especially good at before. This physicality ended up going into some videos I filmed to use as references for animations.
+                              </p>
+                              </div>
+                            </div>
+                            <br>
+                            <div class = "row">
+                              <video controls class="object-fit-contain">
+                                <source src="visuals/20230503_125042 - Trim.mp4" type="video/mp4">
+                                  [Stage Combat Demo]
+                              </video>
+                            </div>
+                            <br>
+                          </div>
+
+                          <br>
+
+                          <div id="computer-science">
+                            <div class="border border-light border-1 bg-dark text-white container-fluid">
+                              <p></p>
+                              <h2>Computer Science</h2>
+                              <br>
+                              <div class="border border-light border-1 bg-dark text-white container-fluid">
+                                <p></p>
+                                <p>
+                                  Computer Science. The life blood of video games. This may not have been the first way that I entered the game development cycle, but it quickly became the way that I intend to continue up through the industry. When I first began to work on my project
+                                  <a href="#inhuman"> Inhuman </a>,
+                                   which became a bit of a flop for a variety of reasons, I spent a lot of my time coding features rather than working on things like animations, which was what got me into the project originally. My focus on Computer Science in the last two and a half years is prevalent, and I'd like to walk through it a little bit.
+                                </p>
+                              </div>
+                              <div class="row"> <br><br><!-- Break --> </div>
+                              <div class="row">
+                                <div class="col-sm-11 border border-light border-1 bg-dark text-white container-fluid">
+                                  <p></p>
+                                  <p>
+                                    When I was first writing
+                                    <a href="#writing">
+                                      text-based game systems on Discord
+                                    </a>
+                                    I thought it might be interesting to have a native command for many of the randomized functions that you would be doing in the game. Not finding any way to do this that already existed, I decided to create a Discord chatbot that could handle some of these functions. For development purposes, the bot was split into two different entities, Tempobot and Scavengerbot. My father, a mathematician and general computer-science man, walked me through some Python to get started. The project worked, albeit with a fair amount of bugs, but to keep functionality and development active would require a server that I am not currently funding.
+                                  </p>
+                                  <br>
+                                  <p>
+                                    The idea was essentially to maintain character sheets and system rules inside the bot, so the  the system and characters could be distributed across different communities who might want to use the game system for their own purposes. The bot could create random names, character greetings, general character descriptors, and allow you to search "chests" for random drops. Many of the TempoBot functions were largely social as well at the request of many of the people playtesting my system.
+                                  </p>
+                                </div>
+                                <br>
+                                <div class = "col-sm-1">
+                                  <img src="visuals/Screenshot_20240114_043524_Discord.jpg" class="img-fluid" alt="[TempoBot and ScavengerBot Help Menu and Functions]">
+                                </div>
+                              </div>
+                              <div class="row"> <br><br><!-- Break --> </div>
+                              <div class= "row">
+                                <div class = "col-sm-3">
+                                  <img src="visuals/20240121_204850.jpg" class="img-fluid" alt="[Splitkeeper Doc]">
+                                </div>
+                                <div class= "col-sm-9 border border-light border-1 bg-dark text-white container-fluid">
+                                  <p></p>
+                                  <p>
+                                    Another small project I worked on was very different in nature. I am an
+                                    <a href="https://www.instagram.com/athlete_connor_dolan/">athlete in both Distance Track and Field and Cross Country</a>
+                                    and while my sport doesn't require much more than a good pair of running shoes, I still found myself repeatedly frustrated by the nature of many runkeeper apps. One of the ways we train is by doing repeats, which takes a few different forms, but the formula is largely the same. The issue I encountered was simply human error; I always forgot to turn off my watch and check the time. So I thought "what if there was a way to automatically stop the watch when you finished your lap?" This launched a very quick design process of a Samsung smartwatch application that I called "Splitkeeper". Splitkeeper was written on a platform called Tizen, which is designed exclusively for Samsung smart-device development, like TVs and wearables, which serves me because my devices are primarily Samsung. Unfortunately, Tizen has the kind of documentation and functionality that makes it... lets say
+                                    <a href="https://www.theregister.com/2017/07/12/samsungs_tizen_no_longer_worst_ever/">"known"</a>
+                                    among programmers, so the project has moved at a snail’s pace as I research alternatives and as of right now is on indefinite hard-stop until my watch gets fixed. It was broken during a Cross Country meet and I have been unable to fix it as of right now.
+                                  </p>
+                                </div>
+                                <br>
+                              </div>
+                              <div class="row"> <br><br><!-- Break --> </div>
+                              <div class="row">
+                                <div class = "col-sm-8 border border-light border-1 bg-dark text-white container-fluid">
+                                  <p></p>
+                                  <p>
+                                    The final project I'd like to bring up is actually my most recent. When I was starting my application process for colleges, many of the places I was applying to wanted me to submit a portfolio, which I did not have on hand. So my options became
+                                  </p>
+                                  <p>1) submit a bunch of stray files, </p>
+                                  <p>2) Go to something like Wix and have a drag and drop website </p>
+                                  <p>Or, and hear me out, I could</p>
+                                  <p>3) Spend the little time I had on my breaks from cleaning up application essays to learn a language and an API that I was unfamiliar with to build a website for a simple purpose.</p>
+                                  <p>
+                                    So anyway, I learned HTML in about three hours, set up the Github repository, and went off. I had some help setting up Bootstrap but most of what my father helped me implement has since been replaced. That repository now holds all of my scattered files and all of them should be represented in this portfolio.
+                                  </p>
+                                </div>
+                                <div class = "col-sm-4">
+                                  <img src="visuals/20240121_223322.jpg" class="img-fluid" alt="[Website Layout]">
+                                </div>
+                              </div>
+                              <div class="row"> <br><br><!-- Break --> </div>
+                              <div class = "row">
+                                <div class = "col-sm-3">
+                                  <img src="visuals/Screenshot_20240107_222844_Instagram.jpg" class="img-fluid" alt="[Computer Science Club Pictures]">
+                                </div>
+                                <div class = "col-sm-9 border border-light border-1 bg-dark text-white container-fluid">
+                                  <p></p>
+                                  <p>
+                                    When I figured out how much I liked the Computer Science side of things, or at least scripting, I decided that getting more of an education than just YouTube videos might be beneficial. Most of the education I had in Computer Science had come from simply looking up potential solutions and documentations while stumbling around until I fixed most of the bugs in whatever it was that I was building. So I took steps to learn properly. Unable to enroll in AP Computer Science due to other conflicting APs, I settled for the step down: AP Computer Science Principles. I also took Computer Science 102 from community college during the school session to continue what I’d started in the summer with Computer Science 101. Next semester, I plan to continue with Computer Science 112, Intro to C++, which is the language that Unreal utilizes. Unreal is the engine that I've been spending a lot of my time in recently, so C++ feels like the best continuation. I'm also one of the very first members of the Computer Science Club at my high school and I occasionally do some tutoring for underclassmen.
+                                  </p>
+                                </div>
+                              </div>
+                              <div class="row"> <br><br><!-- Break --> </div>
+                              <div class = "row">
+                                <div class = "col-sm-8">
+                                  <div class = "nav nav-pills navbar-dark text-decoration-none" style = "color:black">
+                                    <div class = "border border-light border-1 bg-dark text-white container-fluid">
+                                      <li class="nav-item">
+                                        <a href="#inhuman" class="nav-link text-white">
+                                          <p></p>
+                                          <p>
+                                            The learning curve for my very first project Inhuman was the computer science aspects. Given that the game revolved around a set of abilities your character could use and a system to change these abilities, most of what I did on that project was writing scripts. Inhuman was meant to be written in the Unity Engine, so I spent a lot of my time writing features for the game in C# rather than working on assets. Most of the tangible product of Inhuman was a handwritten controller moving a cube across a small city set with a bunch of crazy abilities going off on button commands, like teleportation, “super jumping”, and enhanced speed. Though the project ultimately was a failure, I learned a lot of C# and about the framework of a game engine. One of the big lessons I learned afterwards will make it very hard to display assets on this page, and that is organization of my files. Inhuman has two Github repositories, and I can't decide which one is messier.
+                                          </p>
+                                        </div>
+                                      </a>
+                                    </li>
+                                  </div>
+                                </div>
+                                <div class = "col-sm-4">
+                                  <img src="visuals/Screenshot 2023-12-28 204543.png" class="img-fluid" alt="[Inhuman Scripts and Repositories]">
+                                  <p></p>
+                                  <img src="visuals/Screenshot 2023-12-28 204414.png" class="img-fluid" alt="[Inhuman Scripts and Repositories]">
+                                </div>
+                              </div>
+                              <br>
+                            </div>
+                          </div>
+
+                          <br>
+                          <div id="inhuman">
+                          <div class ="border border-light border-1 bg-dark text-white container-fluid">
+                            <div class= "row">
+                              <p></p>
+                              <h2> Inhuman </h2>
+                              <!--Header/Presentation Goes Here-->
+                            </div>
+
+                            <br>
+
+                            <div class="row">
+                              <div class ="border border-light border-1 bg-dark text-white container-fluid">
+                                <br>
+                                <p>
+                                  As a 10th grader at an IB school, one of our big culminating tasks is to do something called a Personal Project. While many people chose to take less than 10 hours to complete the whole project, I decided it would be the perfect platform to try and develop my first game. I had done a fair amount of animation and writing beforehand, and I wanted to move up on the interactive media tier list.
+                                </p>
+                              </div>
+                            </div>
+                            <div class="row"> <br><br><!-- Break --> </div>
+                            <div class="row">
+                              <div class="col-sm-6">
+                                <div class ="border border-light border-1 bg-dark text-white container-fluid">
+                                  <p></p>
+                                  <h3> Inspiration and Direction</h3>
+                                  <p>
+                                    Inhuman was narratively inspired by many of the short stories I had written over COVID. The story would revolve around a group of superheroes, which would allow me to take heavy inspiration from one of my favorite games; Sucker Punch’s inFamous Second Son. The game would revolve around you, the player, who could pick from a wide range of superpowers to make the controller fit to your playstyle and go through a story in a massive open world. The game design document was full of mechanics to add and balancing notes, but also focused heavily on narrative. This narrative focus caused me to delve deep into my knowledge of comics and justify everything that happened in the world, which created a character-driven story around the player, exactly what I was looking for.
+                                  </p>
+                                </div>
+                              </div>
+                              <div class="col-sm-6">
+                                <div class ="border border-light border-1 bg-dark text-white container-fluid">
+                                  <p></p>
+                                  <h3> Issues</h3>
+                                  <p>
+                                    Inhuman suffered from something called scope creep. In trying to create my dream superhero game, I decided to add every mechanic that I thought might make the game greater with no regards of if I could handle creating something like that by myself in the single year that the personal project allowed for. Some of the features I intended to implement were multiplayer, a massive open world, and superb visuals. Rather than trying to come at the project from different angles and build up gradually, I stalwartly refused to take the "easy" (smart) way through the problem, which of course created problems. Messy projects, poorly written scripts, corrupt files, you name it, all of this happened during the Inhuman development. Given that my grit had served me well during my nightmarish
+                                    <a href="#covid">COVID-19 experience,</a>
+                                    I trekked on, mistaking the resolve it had taken to get through something outside of my control for the stubbornness it takes to not change course when the answer is wrong.
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row"> <br><br><!-- Break --> </div>
+                            <div class="row">
+                              <div class="col-md-4">
+                                <img src="visuals/unknown-11.png" class="img-fluid" alt="[Character Asset]">
+                              </div>
+                              <div class="col-md-5">
+                                <img src="visuals/Screenshot 2023-08-27 133932.png" class="img-fluid" alt="[Level Design (Inhuman)]">
+                              </div>
+                              <div class="col-md-3">
+                                <img src="visuals/Screenshot 2022-03-17 201910.png" class="img-fluid" alt="[Inhuman Art]">
+                              </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                              <video controls class="object-fit-contain">
+                                <source src="..." type="video/mp4">
+                                  [Inhuman Presentation (If you can get it)]
+                              </video>
+                            </div>
+                            <br>
+                            <div class="row">
+                              <div class="col-sm-6">
+                                <img src="visuals/unknown-9.png" class="img-fluid" alt="[First Controller w/ Physics]">
+                              </div>
+                              <div class="col-sm-6">
+                                <img src="visuals/20210806_002747.jpg" class="img-fluid" alt="[The "Murder Board" up in my room of Inhuman skill tree ideas]">
+                              </div>
+                            </div>
+                            <div class="row"> <br><br><!-- Break --> </div>
+                            <div class="row">
+                              <div class ="border border-light border-1 bg-dark text-white container-fluid">
+                                <p></p>
+                                <h3>Lessons</h3>
+                                <p>
+                                  Inhuman is an experience that I still draw upon today. Its referenced all over my portfolio, and why would it not be? It taught me about computer science, game writing, production, social media presence and project management, probably more than any other project I’ve done. However, the game didn’t do everything poorly. The narrative focus of the game caused me to document all of the story and gameplay elements in a massive Google Site, which contained everything from major locations to main story missions similar to that of inFamous, each of which was complete with character sheets and powers (movesets) for many of the enemies. These character sheets and designs were massive and detailed, and all told I wrote enough to classify the story as a small novel.
+                                </p>
+                              </div>
+                            </div>
+                            <div class="row"> <br><br><!-- Break --> </div>
+                            <div class="row" id="covid">
+                              <div class ="border border-light border-1 bg-dark text-white container-fluid">
+                                <p></p>
+                                <h3>COVID-19</h3>
+                                <p>
+                                  My COVID experience was one that revolved around technical difficulty. By the end of the first semester, it was clear that this experience would affect my GPA much later on in life. While I produced okay work, many of my assignments would not submit or deleted constantly, meaning I had to redo dozens upon dozens of assignments by myself. I had no communication with other classmates considering I had come later than everyone else and only been at the school for a few months. They meant well, but my teachers eventually got sick of hearing my saga, used to dealing with other 9th graders who would lie about something similar. To even get through, I had to muster an insane amount of grit and faith that everything would work out as my counselors carried me across the finish line, my segment of the gradebook ridden with the bullet holes of digitally shredded assignments. I took time to make sure I understood the material, but it will never be reflected.
+                                </p>
+                              </div>
+                            </div>
+                            <p></p>
+                          </div>
+
+                          <br>
+
+                          <div id="space-toboggan" class ="border border-light border-1 bg-dark text-white container-fluid">
+                            <div class= "row">
+                              <br>
+                              <img src="visuals/Screenshot_20240122_003136_Gallery.jpg" class="img-fluid" alt="[Toboggan Header]">
+                              <p></p>
+                              <h2> Space Toboggan </h2>
+                              <!--Header/Presentation Goes Here-->
+                            </div>
+
+                            <br>
+
+                            <div class="row">
+                              <div class ="border border-light border-1 bg-dark text-white container-fluid">
+                                <p></p>
+                                <h3>Overview - Space Toboggan</h3>
+                                <br>
+                                <p>
+                                  Having recently learned what scope creep is, my goal in designing whatever my next project might be would have to revolve around simplicity. Rather than designing a tiny project, I decided to build something that would start off small with the potential to get bigger as my skills grew. The final game could be released with polished systems thanks to development in smaller projects. This approach to breaking the larger project into smaller games would be very helpful in my learning later on.
+                                </p>
+                              </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                              <div class="col-sm-6">
+                                <div class ="border border-light border-1 bg-dark text-white container-fluid">
+                                  <p></p>
+                                  <h3>Inspiration - Artemis</h3>
+                                  <br>
+                                  <p>
+                                    The concept for Space Toboggan comes from two of my favorite games of all time. Artemis Spaceship Bridge Simulator is a game I picked up at a Dungeons and Dragons convention. The game consists of a group of people on local multiplayer, ideally played in a large room like how it was structured at the convention, with each person adopting a role on a spaceship similar to Star Trek. The result is a bunch of people all shouting across the room to each other to work in symbiosis to execute trades, engage in combat, and fly through the stars. As I played, I watched the ship creep across the stage, oftentimes having nothing to do in a specific role. I wondered if there was a way to cut out the fat to make a more engaging experience.
+                                  </p>
+                                </div>
+                                <br>
+                                <img src="visuals/Screenshot 2024-01-22 000445.png" class="img-fluid" alt="[Artemis Steam Page]">
+                              </div>
+                              <div class="col-sm-6">
+                                <div class ="border border-light border-1 bg-dark text-white container-fluid">
+                                  <p></p>
+                                  <h3>Inspiration - Tempest</h3>
+                                  <br>
+                                  <p>
+                                    The other massive influence was an arcade game from the 80s, Tempest. Tempest has been perhaps my favorite arcade game of all time since I first found a cabinet in elementary school. I actually played so much that I would get into high score competitions with my boss while I worked in the comic shop. I bought a Tempest shirt and wore it until it was destroyed. I love the game, and I know it well. To explain, Tempest is a shooter game where the player looks down a tube and has to shoot incoming enemies. It's a fast paced game, and when thinking about ways to counter the slow aspects of the Artemis experience, it wasn't long before I thought of Tempest.
+                                  </p>
+                                </div>
+                                <br>
+                                <img src="visuals/maxresdefault.jpg" class="img-fluid" alt="[Tempest!]">
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-sm-1">
+                                <!--Duplicate this a bunch and insert Space Toboggan images here-->
+                              </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                              <div class ="border border-light border-1 bg-dark text-white container-fluid">
+                                <p></p>
+                                <h3>Approach</h3>
+                                <br>
+                                <p>
+                                  Before getting too far down the design pipeline, I knew that I had to keep a firm grip on scope before repeating the same mistake I had with Inhuman. I also felt that creating such a massive game would destroy the arcade origins of the design (part of the reason I incorporated them!) So, each step of the way in designing this game, I asked myself how feasible it was for me to actually program this project. I looked up specific YouTube tutorials and documentation to make sure that there would be resources I could use for each feature I decided to code in the game. Even if the game was a short arcade-style game, I still was extra cautious with the design. To make sure that my goals were attainable, I split the project (which I called "Space Toboggan" as the design process started and it just sort of stuck) into three smaller games.
+                                </p>
+                              </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                              <div class="col-sm-4">
+                                <div class="border border-light border-1 bg-dark text-white container-fluid">
+                                  <p></p>
+                                  <h3>Chute</h3>
+                                  <p>
+                                    To approach the piloting aspect of the game, I designed a very small game called “chute” which had a little pilot controller that careened down a procedurally generated tunnel (a chute). This was to prove that I could build a good piloting system and use some procedural generation elements that would come in handy for the arcade elements.
+                                  </p>
+                                </div>
+                                <br>
+                                <img src="visuals/TubeScreenshot.png" class="img-fluid" alt="[Chute Demo]">
+                                <p></p>
+                                <img src="visuals/Sparrow_Reference_Board.png" class="img-fluid" alt="[Spaceship Reference]">
+                              </div>
+
+                              <div class="col-sm-4">
+                                <div class="border border-light border-1 bg-dark text-white container-fluid">
+                                  <p></p>
+                                  <h3>Spinner</h3>
+                                  <p>
+                                    To approach the second role, the gunner, I decided to build a game where you sat in a turret and shot at objects in the sky. You could spin the turret around the base for different aim, a proof of concept for the idea I had for the gunner seat where you did something similar attached to the pilot seat.
+                                  </p>
+                                </div>
+                                <br>
+                                <img src="visuals/20240121_204906.jpg" class="img-fluid" alt="[Sunset Comix Picture]">
+                              </div>
+
+                              <div class="col-sm-4">
+                                <div class="border border-light border-1 bg-dark text-white container-fluid">
+                                  <p></p>
+                                  <h3>Character Selector</h3>
+                                  <p>
+                                    The third “game” I sketched was much less flamboyant but one of the most technically challenging. In order to understand how to make and manage a multiplayer class system, I designed a small game in which you could join a lobby and select a role. That role would simply change the color of your capsule, which had a default first person controller. If someone was already the role you were trying to select, it would show that as well. To create a multiplayer game in which someone selects a role is great practice to expedite implementation in the final product.
+                                  </p>
+                                </div>
+                                <br>
+                                <div class="border border-light border-1 bg-dark text-white container-fluid">
+                                  <p></p>
+                                  <h3>Cutscenes and UI/UX</h3>
+                                  <p>
+                                    While I was working on the development of these smaller projects, I began to design some UI/UX aspects and commission some art by the same friend who did Inhuman. I have some of the early drafts of my concepts for the art already posted. I also started preproduction for a cutscene that will play before the game, which I decided would be in real life, writing a script and shot list.
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                              <!--Misc and Cutscene Goes Here-->
+                            </div>
+                            <br>
+                            <div class="row">
+                              <div class ="border border-light border-1 bg-dark text-white container-fluid">
+                                <br>
+                                <h3>Next Steps</h3>
+                                <p>
+                                  In order to launch Space Toboggan successfully, I still need to formally announce the game, which I have been hesitant to do until I can devote some proper time to its completion. Once announced, I will do a fair amount of publicity for it within my budget constraints. After all three of the small games are done, which they are not (Chute is complete and development of Spinner is ongoing), I will implement the systems in the final product which will lay out a solid framework I can iterate on. At that point, a lot of production will be complete.
+                                </p>
+                                <br>
+                                <p>
+                                  One of the next big steps for the development of this project is to change the name.
+                                </p>
+                              </div>
+                            </div>
+                            <p></p>
+                          </div>
+
+                          <br>
+
+                          <div id="prototypes">
+                            <!-- Game Footage goes here -->
+                            <!-- Commented out the border for experimentation -->
+                            <!--<div class="border border-light border-1 bg-dark text-white container-fluid"> -->
+                            <div class="bg-dark text-white container-fluid">
+                              <p></p>
+                              <h2 class="text-center">Prototype - Pinball</h2>
+                              <br>
+                              <p>
+                                My most recent game design venture is a small project called Pinball. The game is simple; get as high as possible. Pinball is meant to combine the Titanfall movement system with the Doodle Jump game design, where the character can jump up and to the side through a procedurally generated world. The game determines your score by your distance to the ground. Simple. I was a little ambitious in my timeframe when I was starting and realistically I could do it in maybe two to three weeks of actual development. Unfortunately, I was only able to put in about 5 days before school started again. That is the project I’m working on at the moment, and when I stream on Twitch that is what I’m working on. Above you can see some footage of the game.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <br>
+                        <br>
+                        <br>
+                        <div class= "text-center container-fluid">
+                          <a href="#top" class="btn btn-primary">You've reached the bottom! Wanna do it again?</a>
+                        </div>
+                      </div>
+                      </div>
+                      <div class="col-2">~~</div>
+                    </div>
+                  </div>
+                </body>
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+                <script src="https://kit.fontawesome.com/f82f770130.js" crossorigin="anonymous"></script>
+
+                </html>
