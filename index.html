@@ -29,30 +29,7 @@
       <div class="row flex-nowrap text-center bg-dark text-white">
         <div class="col-md-2"><!--JustifyColTowardsRight--></div>
         <div class="col-md-8">
-          <div id="carousel" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active" data-bs-interval="4500">
-                <img src="visuals/Screenshot_20240122_003136_Gallery.jpg" class="d-block w-100" alt="[Space Toboggan]">
-              </div>
-              <div class="carousel-item" data-bs-interval="4500">
-                <img src="visuals/Screenshot_20210903-213756_Gallery.jpg" class="d-block w-100" alt="[Inhuman]">
-              </div>
-              <div class="carousel-item" data-bs-interval="4500">
-                <img src="..." class="d-block w-100" alt="[Animation]">
-              </div>
-              <div class="carousel-item" data-bs-interval="4500">
-                <img src="..." class="d-block w-100" alt="[Film]">
-              </div>
-              <div class="carousel-item" data-bs-interval="4500">
-                <img src="..." class="d-block w-100" alt="[Computer Science]">
-              </div>
-              <div class="carousel-item" data-bs-interval="4500">
-                <img src="..." class="d-block w-100" alt="[Writing]">
-              </div>
-              <div class="carousel-item" data-bs-interval="4500">
-                <img src="..." class="d-block w-100" alt="[Prototypes]">
-              </div>
-            </div>
+          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -62,11 +39,48 @@
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="2500">
+                <a href="#space-toboggan">
+                  <img src="visuals/SpaceTobogganCard.png" class="d-block w-100" alt="[Space Toboggan]">
+                </a>
+              </div>
+              <div class="carousel-item" data-bs-interval="2500">
+                <a href="#inhuman">
+                  <img src="visuals/InhumanCard.jpg" class="d-block w-100" alt="[Inhuman]">
+                </a>
+              </div>
+              <div class="carousel-item" data-bs-interval="2500">
+                <a href="#animation">
+                  <img src="visuals/AnimationCard.jpg" class="d-block w-100" alt="[Animation]">
+                </a>
+              </div>
+              <div class="carousel-item" data-bs-interval="2500">
+                <a href="#film">
+                  <img src="visuals/FilmCard.png" class="d-block w-100" alt="[Film]">
+                </a>
+              </div>
+              <div class="carousel-item" data-bs-interval="2500">
+                <a href="#computer-science">
+                  <img src="visuals/ComputerScience_Header.png" class="d-block w-100" alt="[Computer Science]">
+                </a>
+              </div>
+              <div class="carousel-item" data-bs-interval="2500">
+                <a href="#writing">
+                  <img src="visuals/Screenshot_20240122_140618_Gallery.jpg" class="d-block w-100" alt="[Writing]">
+                </a>
+              </div>
+              <div class="carousel-item" data-bs-interval="2500">
+                <a href="#prototypes">
+                  <img src="visuals/PrototypesCard.png" class="d-block w-100" alt="[Prototypes]">
+                </a>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Next</span>
             </button>
@@ -115,8 +129,8 @@
       <!-- Side Navigation (Ripped)-->
       <div class="row flex-nowrap sticky-top">
         <div class="col-auto col-md-2 col-xl-2 px-sm-2 px-0 bg-dark">
-          <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
-            <a href="#" class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+          <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100 sticky-top">
+            <a href="#" class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white font-weight-bold">
               <span class="fs-5 d-none d-sm-inline">
                 Navigation
               </span>
@@ -314,7 +328,7 @@
                          new Twitch.Embed("alivestream", {
                           width: '100%',
                           height: '100%',
-                          channel: "cdolan24games" 
+                          channel: "cdolan24games"
                          });
                       </script>
                     </div>
