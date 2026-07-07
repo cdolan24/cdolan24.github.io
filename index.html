@@ -10,7 +10,6 @@
   <style>
     :root {
       --header-height: 80px;
-      /* fallback, JS will override */
     }
 
     .sidebar {
@@ -20,10 +19,76 @@
       overflow-y: auto;
     }
 
-    /* Prevents anchor links from hiding behind the header */
-    section,
     [id] {
       scroll-margin-top: calc(var(--header-height) + 1rem);
+    }
+
+    .section-card {
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 4px;
+      padding: 0;
+      margin-bottom: 1.5rem;
+    }
+
+    .section-header {
+      padding: 1.25rem 1.5rem;
+      background: rgba(255, 255, 255, 0.05);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+      font-family: Verdana, sans-serif;
+    }
+
+    .section-header h1,
+    .section-header h2 {
+      margin: 0 0 3px;
+      color: #fff;
+    }
+
+    .section-header p {
+      margin: 0;
+      font-size: 12px;
+      color: #aaa;
+    }
+
+    .section-body {
+      padding: 1.5rem;
+    }
+
+    /* Subsection cards get the same tinted-band header treatment */
+    .subsection-card {
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: 4px;
+      margin-bottom: 1rem;
+    }
+
+    .subsection-header {
+      padding: 0.6rem 1rem;
+      background: rgba(255, 255, 255, 0.04);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      font-family: Verdana, sans-serif;
+    }
+
+    .subsection-header h3 {
+      margin: 0;
+      font-size: 1rem;
+      font-weight: 600;
+      color: #fff;
+    }
+
+    .subsection-body {
+      padding: 1rem;
+    }
+
+    .subsection-body p:last-child {
+      margin-bottom: 0;
+    }
+
+    video {
+      width: 100%;
+      border-radius: 4px;
+    }
+
+    .nav-link:hover {
+      background-color: rgba(255, 255, 255, 0.1);
     }
   </style>
 </head>
@@ -35,7 +100,6 @@
     <hr class="border-secondary my-0">
     <div class="row align-items-center px-3 py-3">
       <div class="col d-flex justify-content-start">
-        <div class="col-"></div>
         <div class="d-flex flex-column">
           <h1 class="mb-0">Connor Dolan</h1>
           <small class="text-secondary">UCSC Applied Mathematics 2028</small>
@@ -66,7 +130,7 @@
     <hr class="border-secondary my-0">
   </div>
 
-  <!-- Page Layout manager (Sidebar/Main Content) -->
+  <!-- Page Layout: Sidebar + Main Content -->
   <div class="container-fluid px-0">
     <div class="row flex-nowrap">
 
@@ -77,49 +141,43 @@
           <ul class="nav nav-pills flex-column gap-1">
             <li class="nav-item">
               <a href="#writing" class="nav-link text-white">
-                <h5 class="mb-0"></h5>Text-Based RPG Bot</h5>
+                <h5 class="mb-0">Text-Based RPG Bot</h5>
                 <p class="mb-0 small text-secondary">Artificially Generated Adventures</p>
-                <!-- Tempobot Goes Here from 'Computer Science'-->
               </a>
             </li>
             <li class="nav-item">
-              <a href="#animation" class="nav-link text-white">
-                <h5 class="mb-0"></h5>Pop Culture</h5>
-                <p class="mb-0 small text-secondary">Comics, Films and Animations</p>
-                <!-- Animations (Danny the Default Man)-->
-                <!-- Sunset Comix -->
-                <!-- Athletic Recruitment -->
-                <!-- YouTube Channel (Connor Dolan and the Spirit of the Wind)-->
+              <a href="#pop-culture" class="nav-link text-white">
+                <h5 class="mb-0">Pop Culture</h5>
+                <p class="mb-0 small text-secondary">Comics, films, animations, and stage combat</p>
               </a>
             </li>
             <li class="nav-item">
-              <a href="#computer-science" class="nav-link text-white">Computer Science
-              <p class="mb-0 small text-secondary">Miscellaneous Projects</p></a>
-              <!-- This Website (HTML 5)-->
-              <!-- Kurt Rauer Project-->
-              <!-- Verdant AI Project-->
-              <!-- Axe the Splitkeeper-->
+              <a href="#computer-science" class="nav-link text-white">
+                <h5 class="mb-0">Computer Science</h5>
+                <p class="mb-0 small text-secondary">Miscellaneous Projects</p>
+              </a>
             </li>
             <li class="nav-item">
               <a href="#inhuman" class="nav-link text-white">
-                <h5 class="mb-0"></h5>Inhuman</h5>
+                <h5 class="mb-0">Inhuman</h5>
                 <p class="mb-0 small text-secondary">COVID-19 Gamedev Debut</p>
               </a>
-            <li class="nav-item">
-              <a href="#space-toboggan" class="nav-link text-white">Space Toboggan! <span
-                  class="badge bg-secondary ms-1">Ongoing</span>
-                  <p class="mb-0 small text-secondary">Experimental Co-op Arcade Game</p>
-                </a>
             </li>
             <li class="nav-item">
-              <a href="#prototypes" class="nav-link text-white">WhereHaveIBeen 
-                <span
-                  class="badge bg-secondary ms-1">Ongoing</span>
-                  <p class="mb-0 small text-secondary">Real Life Forza Horizon Lobby</p>
+              <a href="#space-toboggan" class="nav-link text-white">
+                <h5 class="mb-0">Space Toboggan! <span class="badge bg-secondary ms-1">Ongoing</span></h5>
+                <p class="mb-0 small text-secondary">Experimental Co-op Arcade Game</p>
               </a>
             </li>
             <li class="nav-item">
-              <a href="#prototypes" class="nav-link text-white"><h5 class="mb-0"></h5>Project Cars</h5>
+              <a href="#wherehaveibeen" class="nav-link text-white">
+                <h5 class="mb-0">WhereHaveIBeen <span class="badge bg-secondary ms-1">Ongoing</span></h5>
+                <p class="mb-0 small text-secondary">Real Life Forza Horizon Lobby</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#project-cars" class="nav-link text-white">
+                <h5 class="mb-0">Project Cars</h5>
                 <p class="mb-0 small text-secondary">Turning Actual Wrenches</p>
               </a>
             </li>
@@ -133,54 +191,42 @@
         <!-- Carousel -->
         <div id="carouselExampleIndicators" class="carousel slide mb-4" data-bs-ride="carousel">
           <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-              aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-              aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-              aria-label="Slide 3"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
-              aria-label="Slide 4"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
-              aria-label="Slide 5"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
-              aria-label="Slide 6"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6"
-              aria-label="Slide 7"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
           </div>
           <div class="carousel-inner">
             <div class="carousel-item active" data-bs-interval="2500">
-              <a href="#space-toboggan"><img src="visuals/SpaceTobogganCard.png" class="d-block w-100"
-                  alt="Space Toboggan"></a>
+              <a href="#space-toboggan"><img src="visuals/SpaceTobogganCard.png" class="d-block w-100" alt="Space Toboggan"></a>
             </div>
             <div class="carousel-item" data-bs-interval="2500">
               <a href="#inhuman"><img src="visuals/InhumanCard.jpg" class="d-block w-100" alt="Inhuman"></a>
             </div>
             <div class="carousel-item" data-bs-interval="2500">
-              <a href="#animation"><img src="visuals/AnimationCard.jpg" class="d-block w-100" alt="Animation"></a>
+              <a href="#pop-culture"><img src="visuals/AnimationCard.jpg" class="d-block w-100" alt="Animation"></a>
             </div>
             <div class="carousel-item" data-bs-interval="2500">
-              <a href="#film"><img src="visuals/FilmCard.png" class="d-block w-100" alt="Film"></a>
+              <a href="#pop-culture"><img src="visuals/FilmCard.png" class="d-block w-100" alt="Film"></a>
             </div>
             <div class="carousel-item" data-bs-interval="2500">
-              <a href="#computer-science"><img src="visuals/ComputerScience_Header.png" class="d-block w-100"
-                  alt="Computer Science"></a>
+              <a href="#computer-science"><img src="visuals/ComputerScience_Header.png" class="d-block w-100" alt="Computer Science"></a>
             </div>
             <div class="carousel-item" data-bs-interval="2500">
-              <a href="#writing"><img src="visuals/Screenshot_20240122_140618_Gallery.jpg" class="d-block w-100"
-                  alt="Writing"></a>
+              <a href="#writing"><img src="visuals/Screenshot_20240122_140618_Gallery.jpg" class="d-block w-100" alt="Writing"></a>
             </div>
             <div class="carousel-item" data-bs-interval="2500">
-              <a href="#prototypes"><img src="visuals/PrototypesCard.png" class="d-block w-100" alt="Prototypes"></a>
+              <a href="#project-cars"><img src="visuals/PrototypesCard.png" class="d-block w-100" alt="Prototypes"></a>
             </div>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="prev">
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
           </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="next">
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
           </button>
@@ -198,559 +244,365 @@
 
         <hr class="border-secondary">
 
-        <div class="col py-2">
-          <div class="d-grid gap-3">
-            <div id="writing">
-              <div class="border border-light border-1 bg-dark text-white container-fluid">
-                <br>
-                <h1 style="font-family: Verdana, sans-serif;">
-                  AI Text-Based RPG Systems
-                </h1>
-                <h5 style="font-family: Verdana, sans-serif;"> 
-                  Night City: Legends and claudeRPG Supers
-                </h5>
-                <br>
-                <p>
-                  I’ve been playing Tabletop RPGs, or TTRPGs, since I was in first grade. In many ways, the systems are the foundation of modern video games, and I’ve studied this player versus Game Master format for over a decade and a half. I’ve decided a couple of times to write my own system, to varying degrees of success, but the standout came when I decided to write a system that you could play by yourself.
-                </p>
-                <br>
-                <p>
-                  Night City: Legends is a system inspired by the Cyberpunk 2077 videogame, which in turn was inspired by the Cyberpunk 2020 TTRPG system. Where many TTRPGs rely on a GM, or Game Master to tell a story, I wanted to write a bot to automate as many functions as possible, with the hope that eventually a solo player could play through an adventure that followed a set of rules. This idea was one that I had long before the popularization of generative AI, so the early version was a Discord bot called “Scavengerbot” with very simple functions like creating random character attributes, roll dice, and search "chests" for random drops. Later iterations, ideally, would have an AI model that could run adventures, but at the time, that technology simply did not exist. 
-                </p>
-                <br>
-                <p>
-                  This project was restarted in December of 2025, but went in a much more complex direction. In the playtests, Night City: Legends was a relatively simple system that revolved around your character going on adventures, installing cyberware, and trying not to go insane from psychological strain. The revised system was an effort to create a superhero RPG system echoing Dungeons and Dragons and Steve Jackson’s GURPS. It was far more complex in terms of character creation and mechanics, but uniquely, used a generative AI model to read the core rulebook and fill in the blanks during play. You create a character, type what you want to do, and the AI will play with you according to the rules. If you run into a situation that rules haven’t been written for, the AI will fill in the blank on the fly and save it to your local game rules for later on. It's incredibly fun, even if most generative AI is still incredibly prone to hallucinations.
-                </p>
-                <br>
-                <img src="visuals/LegendsBanner.jpg" class="rounded img-fluid"
-                  alt="[Night City Legends Character Sheet and Discord Server Screenshots]">
-                <p></p>
-              </div>
-            </div>
+        <!-- ===================== WRITING ===================== -->
+        <div id="writing" class="section-card">
+          <div class="section-header">
+            <h2>Text-Based RPG System</h2>
+            <p>Night City: Legends, claudeRPG Supers, and Artificially Intelligent Roleplaying Systems</p>
+          </div>
+          <div class="section-body">
+            <p>
+              I've been playing Tabletop RPGs, or TTRPGs, since I was in first grade. In many ways, the systems are the foundation of modern video games, and I've studied this player versus Game Master format for over a decade and a half. I've decided a couple of times to write my own system, to varying degrees of success, but the standout came when I decided to write a system that you could play by yourself.
+            </p>
+            <p>
+              Night City: Legends is a system inspired by the Cyberpunk 2077 videogame, which in turn was inspired by the Cyberpunk 2020 TTRPG system. Where many TTRPGs rely on a GM, or Game Master to tell a story, I wanted to write a bot to automate as many functions as possible, with the hope that eventually a solo player could play through an adventure that followed a set of rules. This idea was one that I had long before the popularization of generative AI, so the early version was a Discord bot called "Scavengerbot" with very simple functions like creating random character attributes, roll dice, and search "chests" for random drops. Later iterations, ideally, would have an AI model that could run adventures, but at the time, that technology simply did not exist.
+            </p>
+            <p>
+              This project was restarted in December of 2025, but went in a much more complex direction. In the playtests, Night City: Legends was a relatively simple system that revolved around your character going on adventures, installing cyberware, and trying not to go insane from psychological strain. The revised system was an effort to create a superhero RPG system echoing Dungeons and Dragons and Steve Jackson's GURPS. It was far more complex in terms of character creation and mechanics, but uniquely, used a generative AI model to read the core rulebook and fill in the blanks during play. You create a character, type what you want to do, and the AI will play with you according to the rules. If you run into a situation that rules haven't been written for, the AI will fill in the blank on the fly and save it to your local game rules for later on. It's incredibly fun, even if most generative AI is still incredibly prone to hallucinations.
+            </p>
+            <img src="visuals/LegendsBanner.jpg" class="img-fluid rounded" alt="Night City Legends Character Sheet and Discord Server Screenshots">
+          </div>
+        </div>
 
-            <div id="animation">
-              <!-- Title -->
-              <div class="border border-light border-1 bg-dark text-white container-fluid">
-                <p></p>
-                <h2>Comics, Films and Animations</h2>
-                <br>
-                <div class="row">
-
-                  <div class="col-md-8">
-                    <div class="row">
-                      <div class="col-md-4">
-                        <img src="visuals/unknown-10.png" class="rounded img-fluid"
-                          alt="[Danny the Default Man Picture Sketches and Final]">
-                      </div>
-
-                      <div class="col-md-7">
-                        <img src="visuals/unknown2.png" class="rounded img-fluid"
-                          alt="[Danny the Default Man Picture Sketches and Final]">
-                      </div>
-                      <p></p>
-                      <div class="col-md-5">
-                        <img src="visuals/unknown3.png" class="rounded img-fluid"
-                          alt="[Danny the Default Man Picture Sketches and Final]">
-                      </div>
-                      <div class="col-md-3">
-                        <img src="visuals/20210425_174000.jpg" class="rounded img-fluid"
-                          alt="[Danny the Default Man Picture Sketches and Final]">
-                      </div>
-                      <div class="col-md-3">
-                        <img src="visuals/20210425_175338.jpg" class="rounded img-fluid"
-                          alt="[Danny the Default Man Picture Sketches and Final]">
-                      </div>
-                      <p></p>
-                      <div class="row">
-                        <video controls class="object-fit-contain">
-                          <source src="visuals/final_6268ac02627457005f443890_12670.mp4" type="video/mp4">
-                          [Animation 1, 2, 3]
-                        </video>
-                      </div>
-                      <p></p>
-                      <div class="row">
-                        <video controls class="object-fit-contain">
-                          <source src="visuals/Screen_Recording_20231228_174836_Instagram_1.mp4" type="video/mp4">
-                          [24 Hour renders and Postmortem]
-                        </video>
-                      </div>
-                      <p></p>
-                      <div class="row">
-                        <video controls class="object-fit-contain">
-                          <source src="visuals/Screen_Recording_20231228_174836_Instagram_2.mp4" type="video/mp4">
-                          [24 Hour renders and Postmortem]
-                        </video>
-                      </div>
-                    </div>
+        <!-- ===================== POP CULTURE ===================== -->
+        <div id="pop-culture" class="section-card">
+          <div class="section-header">
+            <h2>Comics, Films and Animations</h2>
+            <p>Animations, social media, athletic recruitment, and stage combat</p>
+          </div>
+          <div class="section-body">
+            <div class="row g-3 mb-4">
+              <div class="col-md-8">
+                <div class="row g-2 mb-3">
+                  <div class="col-4">
+                    <img src="visuals/unknown-10.png" class="img-fluid rounded" alt="Danny the Default Man Sketches">
                   </div>
-                  <div class="col-sm-4 border border-light border-1 bg-dark text-white container-fluid">
-                    <p></p>
+                  <div class="col-5">
+                    <img src="visuals/unknown3.png" class="img-fluid rounded" alt="Danny the Default Man">
+                  </div>
+                  <div class="col-3">
+                    <img src="visuals/20210425_174000.jpg" class="img-fluid rounded" alt="Danny the Default Man">
+                  </div>
+                </div>
+                <div class="d-flex flex-column gap-3">
+                  <video controls>
+                    <source src="visuals/final_6268ac02627457005f443890_12670.mp4" type="video/mp4">
+                    Animation 1, 2, 3
+                  </video>
+                  <video controls>
+                    <source src="visuals/Screen_Recording_20231228_174836_Instagram_2.mp4" type="video/mp4">
+                    24 Hour renders and Postmortem
+                  </video>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="subsection-card h-100">
+                  <div class="subsection-header"><h3>About</h3></div>
+                  <div class="subsection-body">
                     <p>
                       Before I was in Applied Mathematics, I was a game designer, which is a field that encompasses a lot of different disciplines. I got my start in game design through amateur animations, which I mostly did to study fight choreography and the way bodies move through space, which is a huge thematic throughline in a lot of my projects. The animations are somewhat crude, even though most of them were made in twenty-four hours or less, and I was limited by a computer that could only yield two frames per second, even in prerendered footage in Blender. Below are some of these crude animations circa 2023.
                     </p>
-                    <br>
                     <p>
-                      I also have some photo editing, social media, and video experience. I’ve been making films since I was a very little boy, and I have written, directed, acted in, and most importantly edited a litany of projects both in an organized academic setting and on my own for almost fifteen years. I have run the social media accounts of multiple organizations, but the most notable was my time at Sunset Comix, where a huge amount of our sales were done via a livestream platform called Whatnot, which I was the cohost of. I also ran a small personal branding Instagram account in an effort to be recruited for Division 3 Cross-Country, which was mostly short-form content designed to highlight big moments in track and field races. One of those reels is shown here.
+                      I also have some photo editing, social media, and video experience. I've been making films since I was a very little boy, and I have written, directed, acted in, and most importantly edited a litany of projects both in an organized academic setting and on my own for almost fifteen years. I have run the social media accounts of multiple organizations, but the most notable was my time at Sunset Comix, where a huge amount of our sales were done via a livestream platform called Whatnot, which I was the cohost of. I also ran a small personal branding Instagram account in an effort to be recruited for Division 3 Cross-Country, which was mostly short-form content designed to highlight big moments in track and field races. One of those reels is shown here.
                     </p>
-                    <br>
                     <p>
-                      Video, Pop Culture, and Film are just generally interesting to me. I write film reviews for a small audience, I help my friends in the UCSC Film department with their projects when I can be useful, and I am the founder of “Inhuman Entertainment”, a brand that I run for everything not directly related to engineering and Computer Science in my life, which is to say publishing games, YouTube videos, stage combat demos, and more. Below is some test footage for my SAFD sword fighting certification in 2024 (I can’t show the real one).
+                      Video, Pop Culture, and Film are just generally interesting to me. I write film reviews for a small audience, I help my friends in the UCSC Film department with their projects when I can be useful, and I am the founder of "Inhuman Entertainment", a brand that I run for everything not directly related to engineering and Computer Science in my life, which is to say publishing games, YouTube videos, stage combat demos, and more. Below is some test footage for my SAFD sword fighting certification in 2024 (I can't show the real one).
                     </p>
-                    <br>
                   </div>
-                  <p></p>
                 </div>
               </div>
             </div>
-          </div>
 
-          <br>
-
-          <div id="film">
-            <div class="border border-light border-1 bg-dark text-white container-fluid">
-              <p></p>
-              <h2>Film</h2>
-              <br>
-              <div class="border border-light border-1 bg-dark text-white container-fluid">
-                <br>
-                <div class="col-md-4">
-                  <img src="visuals/20220514_124344.jpg" class="img-fluid" alt="[Sunset Comix Instagram Posts]">
-                </div>
-                <div class="col-md-4">
-                  <img src="visuals/Untitled-2.png" class="img-fluid" alt="[Sunset Comix Picture]">
-                </div>
-                <div class="col-md-4">
-                  <img src="visuals/20221203_170200.jpg" class="img-fluid" alt="[Sunset Comix Instagram Posts]">
-                </div>
+            <div class="row g-3 mb-4">
+              <div class="col-12">
+                <video controls>
+                  <source src="visuals/20230503_125042 - Trim.mp4" type="video/mp4">
+                  Stage Combat Demo
+                </video>
               </div>
+            </div>
 
-              <div class="row"> <br><br><!-- Break --> </div>
+            <hr class="border-secondary">
 
-              <div class="row">
-                <div class="col-md-3">
-                  <img src="visuals/image.png" class="img-fluid" alt="[Sunset Comix Instagram Posts]">
-                </div>
-                <div class="col-sm-6">
-                  <div class="border border-light border-1 bg-dark text-white container-fluid">
-                    <p></p>
+            <div class="row g-3 mb-4 mt-3">
+              <div class="col-md-3">
+                <img src="visuals/image.png" class="img-fluid rounded" alt="Sunset Comix Instagram Posts">
+              </div>
+              <div class="col-md-6 d-flex flex-column gap-3">
+                <div class="subsection-card">
+                  <div class="subsection-header"><h3>Athletic Recruitment</h3></div>
+                  <div class="subsection-body">
                     <p>
-                      I used some of my editing skills to make small compilation reels for my own purposes. As a state
-                      level student-athlete, I felt that recruitment would be something I was very interested in for my
-                      college experience. To try and make this happen, I reached out to college coaches with a series of
-                      recruitment letters, all of them pointing back to an Instagram I set up
+                      I used some of my editing skills to make small compilation reels for my own purposes. As a state level student-athlete, I felt that recruitment would be something I was very interested in for my college experience. To try and make this happen, I reached out to college coaches with a series of recruitment letters, all of them pointing back to an Instagram I set up
                       <a href="https://www.instagram.com/athlete_connor_dolan/">@athlete_connor_dolan</a>.
-                      This included very functional Instagram reels that were designed to showcase my progression and
-                      occasionally highlight some of my strongest aspects as a runner. I think the reel to the right,
-                      which showcases a dominant last lap in the mile race, demonstrates what I was going for with this
-                      page.
+                      This included very functional Instagram reels that were designed to showcase my progression and occasionally highlight some of my strongest aspects as a runner. I think the reel to the right, which showcases a dominant last lap in the mile race, demonstrates what I was going for with this page.
                     </p>
                   </div>
-                  <br>
-                  <div class="border text-center border-light border-1 bg-dark text-white container-fluid">
-                    <p></p>
-                    <p> FOR ATHLETIC RECRUITMENT INQUIRIES, BE SURE TO
+                </div>
+                <div class="subsection-card text-center">
+                  <div class="subsection-header"><h3>Contact for Recruitment</h3></div>
+                  <div class="subsection-body">
+                    <p class="mb-0">FOR ATHLETIC RECRUITMENT INQUIRIES, BE SURE TO
                       <a href="mailto:cdolanforcollege@gmail.com" target="_blank">EMAIL</a>
                       OR
                       <a href="https://www.instagram.com/athlete_connor_dolan/">DM</a>
                       ME
                     </p>
                     <a href="https://www.athletic.net/athlete/19721890/cross-country/high-school">Follow my times!</a>
-                    <p></p>
                   </div>
                 </div>
-                <div class="col-sm-3 container-fluid">
-                  <div class="row">
-                    <video controls class="object-fit-contain">
-                      <source src="visuals/Screen_Recording_20240122_002808_Instagram.mp4" type="video/mp4">
-                      [Last Lap Reel]
-                    </video>
-                  </div>
-                </div>
-                <br>
               </div>
-
-              <div class="row"> <br><br><!-- Break --> </div>
-
-              <div class="row">
-                <div class="col-sm-4 container-fluid">
-                  <video controls class="object-fit-contain">
-                    <source src="..." type="video/mp4">
-                    [Connor Dolan and the Spirit of the Wind]
-                  </video>
-                </div>
-              <br>
-              <div class="row">
-                <video controls class="object-fit-contain">
-                  <source src="visuals/20230503_125042 - Trim.mp4" type="video/mp4">
-                  [Stage Combat Demo]
+              <div class="col-md-3">
+                <video controls>
+                  <source src="visuals/Screen_Recording_20240122_002808_Instagram.mp4" type="video/mp4">
+                  Last Lap Reel
                 </video>
               </div>
-              <br>
-            </div>
-
-            <br>
-
-            <div id="computer-science">
-              <div class="border border-light border-1 bg-dark text-white container-fluid">
-                <p></p>
-                <h2>Computer Science</h2>
-                <br>
-                <div class="border border-light border-1 bg-dark text-white container-fluid">
-                  <p></p>
-                  <p>
-                    I’ve worked on a lot of small projects, some of them much more functional than others. I like to spend a specific amount of time on little ones to try and pick up a new skill, so a lot of them don’t end up getting finished, but the ones I have finished are listed below. Here’s a small overview of some of the projects and workflows I’ve had experience with;
-                  <ul>
-                    <li>Augmented Reality Experiences from Godot into the Apple Vision Pro via XCode</li>
-                    <li>Augmented Reality in Unity</li>
-                    <li>JavaScript, node.js and live JS game engines</li>
-                  </ul>
-                  </p>
-                </div>
-                <div class="row"> <br><br><!-- Break --> </div>
-                <div class="row">
-                  <div class="col-sm-11 border border-light border-1 bg-dark text-white container-fluid">
-                    <p></p>
-                    <p>
-                      This website was originally made when I was in high school and applying to colleges for game design. I didn’t actually know I needed a portfolio when I was applying, and I had so little money that I couldn’t host a domain. So, I opened up a GitHub Pages repo on my school-issued Chromebook and started to read the HTML documentation. HTML isn’t a hard language by any means; it's barely even a language, but the circumstances of this website’s creation were somewhat notable. No school-issued Chromebook will let you use a code editor, and I was on such a time crunch that I could only work on the portfolio during my thirty-minute lunch break and in between periods. So I had to push code I barely understood to the repository each time I wanted to test it, and I could only do it a couple of times before college admissions officers would be looking at it. This project taught me that I could build useful products even without the proper tools, and it was one of the first times that I really had to learn to be adaptable as a developer.
-                    </p>
-                    <br>
-                    <p>
-                      I was hired by Wyrd Games to build an AI tool for their IP, Malifaux, designed to streamline information about the system to onboard new players. This was my first experience with MCP (Model Context Protocol), which is basically a custom-built AI. It ran off a local Ollama build with a Python data processor on top, underneath a React frontend for ease of access. Freelance coding work like that is a really amazing workflow for me, because it allows me to have a hand in a lot of different projects. I’ve done a few different freelance projects and internships, including some work at Verdant AI, where I did data transfer work on a healthcare database.
-                    </p>
-                  </div>
-                  <br>
-                  <div class="col-sm-1">
-                    <img src="visuals/Screenshot_20240114_043524_Discord.jpg" class="img-fluid"
-                      alt="[TempoBot and ScavengerBot Help Menu and Functions]">
-                  </div>
-                </div>
-                <div class="row"> <br><br><!-- Break --> </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <img src="visuals/Screenshot 2023-12-28 204543.png" class="img-fluid"
-                      alt="[Inhuman Scripts and Repositories]">
-                    <p></p>
-                    <img src="visuals/Screenshot 2023-12-28 204414.png" class="img-fluid"
-                      alt="[Inhuman Scripts and Repositories]">
-                  </div>
-                </div>
-                <br>
-              </div>
-            </div>
-
-            <br>
-            <div id="inhuman">
-              <div class="border border-light border-1 bg-dark text-white container-fluid">
-                <div class="row">
-                  <br>
-                  <h2> Inhuman </h2>
-                  <!--Header/Presentation Goes Here-->
-                </div>
-
-                <br>
-
-                <div class="row">
-                  <div class="border border-light border-1 bg-dark text-white container-fluid">
-                    <br>
-                    <p>
-                      As I began to ease into the world of game development, my first big project was called Inhuman. It was a project I did to satisfy the International Baccalaureate 10th-grade Personal Project. Ultimately, the project ended up being sort of a wreck for all the reasons that junior developers mess up projects. I thought it was important to put in this portfolio to show the mistakes that I’ve already learned from.
-                    </p>
-                    <br> 
-                    <p>
-                      Inhuman was a game that stemmed from a series of short stories, comic books, and animations that I had been writing for over ten years. The goal was to make an online superhero game where you could switch between a huge number of superpowers on the fly while going through a story mode. It was a project I had been thinking about for years and years, and a project that no first-time game developer had any business undertaking.
-                    </p>
-                    <br>
-                    <p>
-                      Inhuman was written in the Unity Engine in C#, and used a completely custom movement controller with hand-made animations. I also made some primitive assets for the story animation. While trying to build something like this was an excellent experience for me that I still draw on (“Inhuman Entertainment” is named for this project), it was still an insane amount of scope creep to have on a project, and I ultimately never finished it. Below you can see some of the early images from the Inhuman development. I hope to go back to it someday after working on some other projects and getting some more experience (see the ongoing “Space Toboggan!”), so I’ll refrain from sharing some of the story elements. The current design document is over 40,000 words, which technically classifies it as a novella.
-                    </p>
-                    </div>
-                  </div>
-
-                </div>
-                <div class="row"> <br><br><!-- Break --> </div>
-                <div class="row">
-                  <div class="col-sm-6">
-                    <div class="border border-light border-1 bg-dark text-white container-fluid">
-                      <p></p>
-                      <h3> Inspiration and Direction</h3>
-                      <p>
-                        empty
-                      </p>
-                    </div>
-                  </div>
-                  <div class="col-sm-6">
-                    <div class="border border-light border-1 bg-dark text-white container-fluid">
-                      <p></p>
-                      <h3> Issues</h3>
-                      <p>
-                        empty
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="row"> <br><br><!-- Break --> </div>
-                <div class="row">
-                  <div class="col-md-4">
-                    <img src="visuals/unknown-11.png" class="img-fluid" alt="[Character Asset]">
-                  </div>
-                  <div class="col-md-5">
-                    <img src="visuals/Screenshot 2023-08-27 133932.png" class="img-fluid"
-                      alt="[Level Design (Inhuman)]">
-                  </div>
-                  <div class="col-md-3">
-                    <img src="visuals/Screenshot 2022-03-17 201910.png" class="img-fluid" alt="[Inhuman Art]">
-                  </div>
-                </div>
-                <br>
-                <div class="row">
-                  <video controls class="object-fit-contain">
-                    <source src="..." type="video/mp4">
-                    [Inhuman Presentation (If you can get it)]
-                  </video>
-                </div>
-                <br>
-                <div class="row">
-                  <div class="col-sm-6">
-                    <img src="visuals/unknown-9.png" class="img-fluid" alt="[First Controller w/ Physics]">
-                  </div>
-                  <div class="col-sm-6">
-                    <img src="visuals/20210806_002747.jpg" class="img-fluid" alt="[The " Murder Board" up in my room of
-                      Inhuman skill tree ideas]">
-                  </div>
-                </div>
-                <div class="row"> <br><br><!-- Break --> </div>
-                <div class="row">
-                  <div class="border border-light border-1 bg-dark text-white container-fluid">
-                    <p></p>
-                    <h3>Lessons</h3>
-                    <p>
-                      empty
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <br>
-
-              <div id="space-toboggan" class="border border-light border-1 bg-dark text-white container-fluid">
-                <div class="row">
-                  <br>
-                  <img src="visuals/Screenshot_20240122_003136_Gallery.jpg" class="img-fluid" alt="[Toboggan Header]">
-                  <p></p>
-                  <h2> Space Toboggan </h2>
-                  <!--Header/Presentation Goes Here-->
-                </div>
-
-                <br>
-
-                <div class="row">
-                  <div class="border border-light border-1 bg-dark text-white container-fluid">
-                    <br>
-                    <p>
-                      Space Toboggan! is an experimental arcade game designed to bring players the cooperative experience of the starship Enterprise with the speed of old-school Atari games. Players each inhabit a “role” on the same ship in order to work together, dodging asteroids while attempting to outrun the interplanetary police.
-                    </p>
-                    <p>
-                      Each of the three roles on your ship is different and equally crucial. The game is designed to challenge the trend in modern gaming of creating solitary experiences by leaning into a hyper-cooperative gameplay loop. Space Toboggan! will be available in two different builds: “At-Home Edition” and “Original”.
-                    </p>
-                  </div>
-                </div>
-                <br>
-                <div class="row">
-                  <div class="col-sm-6">
-                    <div class="border border-light border-1 bg-dark text-white container-fluid">
-                      <p></p>
-                      <h3>At-Home Edition</h3>
-                      <br>
-                      <p>
-                        The concept for Space Toboggan comes from two of my favorite games of all time. Artemis
-                        Spaceship Bridge Simulator is a game I picked up at a Dungeons and Dragons convention. The game
-                        consists of a group of people on local multiplayer, ideally played in a large room like how it
-                        was structured at the convention, with each person adopting a role on a spaceship similar to
-                        Star Trek. The result is a bunch of people all shouting across the room to each other to work in
-                        symbiosis to execute trades, engage in combat, and fly through the stars. As I played, I watched
-                        the ship creep across the stage, oftentimes having nothing to do in a specific role. I wondered
-                        if there was a way to cut out the fat to make a more engaging experience.
-                      </p>
-                    </div>
-                    <br>
-                    <img src="visuals/Screenshot 2024-01-22 000445.png" class="img-fluid" alt="[Artemis Steam Page]">
-                  </div>
-                  <div class="col-sm-6">
-                    <div class="border border-light border-1 bg-dark text-white container-fluid">
-                      <p></p>
-                      <h3>Original</h3>
-                      <br>
-                      <p>
-                        The other massive influence was an arcade game from the 80s, Tempest. Tempest has been perhaps
-                        my favorite arcade game of all time since I first found a cabinet in elementary school. I
-                        actually played so much that I would get into high score competitions with my boss while I
-                        worked in the comic shop. I bought a Tempest shirt and wore it until it was destroyed. I love
-                        the game, and I know it well. To explain, Tempest is a shooter game where the player looks down
-                        a tube and has to shoot incoming enemies. It's a fast paced game, and when thinking about ways
-                        to counter the slow aspects of the Artemis experience, it wasn't long before I thought of
-                        Tempest.
-                      </p>
-                    </div>
-                    <br>
-                    <img src="visuals/maxresdefault.jpg" class="img-fluid" alt="[Tempest!]">
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-sm-1">
-                    <!--Duplicate this a bunch and insert Space Toboggan images here-->
-                  </div>
-                </div>
-                <br>
-                <div class="row">
-                  <div class="border border-light border-1 bg-dark text-white container-fluid">
-                    <p></p>
-                    <h3>Approach</h3>
-                    <br>
-                    <p>
-                      Before getting too far down the design pipeline, I knew that I had to keep a firm grip on scope
-                      before repeating the same mistake I had with Inhuman. I also felt that creating such a massive
-                      game would destroy the arcade origins of the design (part of the reason I incorporated them!) So,
-                      each step of the way in designing this game, I asked myself how feasible it was for me to actually
-                      program this project. I looked up specific YouTube tutorials and documentation to make sure that
-                      there would be resources I could use for each feature I decided to code in the game. Even if the
-                      game was a short arcade-style game, I still was extra cautious with the design. To make sure that
-                      my goals were attainable, I split the project (which I called "Space Toboggan" as the design
-                      process started and it just sort of stuck) into three smaller games.
-                    </p>
-                  </div>
-                </div>
-                <br>
-                <div class="row">
-                  <div class="col-sm-4">
-                    <div class="border border-light border-1 bg-dark text-white container-fluid">
-                      <p></p>
-                      <h3>Chute</h3>
-                      <p>
-                        To approach the piloting aspect of the game, I designed a very small game called “chute” which
-                        had a little pilot controller that careened down a procedurally generated tunnel (a chute). This
-                        was to prove that I could build a good piloting system and use some procedural generation
-                        elements that would come in handy for the arcade elements.
-                      </p>
-                    </div>
-                    <br>
-                    <img src="visuals/TubeScreenshot.png" class="img-fluid" alt="[Chute Demo]">
-                    <p></p>
-                    <img src="visuals/Sparrow_Reference_Board.png" class="img-fluid" alt="[Spaceship Reference]">
-                  </div>
-
-                  <div class="col-sm-4">
-                    <div class="border border-light border-1 bg-dark text-white container-fluid">
-                      <p></p>
-                      <h3>Spinner</h3>
-                      <p>
-                        To approach the second role, the gunner, I decided to build a game where you sat in a turret and
-                        shot at objects in the sky. You could spin the turret around the base for different aim, a proof
-                        of concept for the idea I had for the gunner seat where you did something similar attached to
-                        the pilot seat.
-                      </p>
-                    </div>
-                    <br>
-                    <img src="visuals/20240121_204906.jpg" class="img-fluid" alt="[Sunset Comix Picture]">
-                  </div>
-
-                  <div class="col-sm-4">
-                    <div class="border border-light border-1 bg-dark text-white container-fluid">
-                      <p></p>
-                      <h3>Character Selector</h3>
-                      <p>
-                        The third “game” I sketched was much less flamboyant but one of the most technically
-                        challenging. In order to understand how to make and manage a multiplayer class system, I
-                        designed a small game in which you could join a lobby and select a role. That role would simply
-                        change the color of your capsule, which had a default first person controller. If someone was
-                        already the role you were trying to select, it would show that as well. To create a multiplayer
-                        game in which someone selects a role is great practice to expedite implementation in the final
-                        product.
-                      </p>
-                    </div>
-                    <br>
-                    <div class="border border-light border-1 bg-dark text-white container-fluid">
-                      <p></p>
-                      <h3>Cutscenes and UI/UX</h3>
-                      <p>
-                        While I was working on the development of these smaller projects, I began to design some UI/UX
-                        aspects and commission some art by the same friend who did Inhuman. I have some of the early
-                        drafts of my concepts for the art already posted. I also started preproduction for a cutscene
-                        that will play before the game, which I decided would be in real life, writing a script and shot
-                        list.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <br>
-                <div class="row">
-                  <!--Misc and Cutscene Goes Here-->
-                </div>
-                <br>
-                <div class="row">
-                  <div class="border border-light border-1 bg-dark text-white container-fluid">
-                    <br>
-                    <h3>Next Steps</h3>
-                    <p>
-                      In order to launch Space Toboggan successfully, I still need to formally announce the game, which
-                      I have been hesitant to do until I can devote some proper time to its completion. Once announced,
-                      I will do a fair amount of publicity for it within my budget constraints. After all three of the
-                      small games are done, which they are not (Chute is complete and development of Spinner is
-                      ongoing), I will implement the systems in the final product which will lay out a solid framework I
-                      can iterate on. At that point, a lot of production will be complete.
-                    </p>
-                    <br>
-                    <p>
-                      One of the next big steps for the development of this project is to change the name.
-                    </p>
-                  </div>
-                </div>
-                <p></p>
-              </div>
-
-              <br>
-
-              <div id="prototypes">
-                <!-- Game Footage goes here -->
-                <!-- Commented out the border for experimentation -->
-                <!--<div class="border border-light border-1 bg-dark text-white container-fluid"> -->
-                <div class="bg-dark text-white container-fluid">
-                  <p></p>
-                  <h2 class="text-center">Prototype - Pinball</h2>
-                  <br>
-                  <p>
-                    My most recent game design venture is a small project called Pinball. The game is simple; get as
-                    high as possible. Pinball is meant to combine the Titanfall movement system with the Doodle Jump
-                    game design, where the character can jump up and to the side through a procedurally generated world.
-                    The game determines your score by your distance to the ground. Simple. I was a little ambitious in
-                    my timeframe when I was starting and realistically I could do it in maybe two to three weeks of
-                    actual development. Unfortunately, I was only able to put in about 5 days before school started
-                    again. That is the project I’m working on at the moment, and when I stream on Twitch that is what
-                    I’m working on. Above you can see some footage of the game.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <br>
-            <br>
-            <br>
-            <div class="text-center container-fluid">
-              <a href="#top" class="btn btn-primary">You've reached the bottom! Wanna do it again?</a>
             </div>
           </div>
         </div>
-        <div class="col-2">~~</div>
-      </div>
-    </div>
-</body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-<script src="https://kit.fontawesome.com/f82f770130.js" crossorigin="anonymous"></script>
-<script>
-  document.addEventListener('DOMContentLoaded', () => {
-    const header = document.getElementById('site-header');
-    const height = header.getBoundingClientRect().height;
-    document.documentElement.style.setProperty('--header-height', height + 'px');
-  });
-</script>
 
+        <!-- ===================== COMPUTER SCIENCE ===================== -->
+        <div id="computer-science" class="section-card">
+          <div class="section-header">
+            <h2>Computer Science</h2>
+            <p>Freelance work, Discord bots, AR, and miscellaneous projects</p>
+          </div>
+          <div class="section-body">
+            <div class="subsection-card mb-3">
+              <div class="subsection-header"><h3>Overview</h3></div>
+              <div class="subsection-body">
+                <p>
+                  I've worked on a lot of small projects, some of them much more functional than others. I like to spend a specific amount of time on little ones to try and pick up a new skill, so a lot of them don't end up getting finished, but the ones I have finished are listed below. Here's a small overview of some of the projects and workflows I've had experience with:
+                </p>
+                <ul class="mb-0">
+                  <li>Augmented Reality Experiences from Godot into the Apple Vision Pro via XCode</li>
+                  <li>Augmented Reality in Unity</li>
+                  <li>JavaScript, node.js and live JS game engines</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="row g-3">
+              <div class="col-md-9">
+                <div class="subsection-card mb-3">
+                  <div class="subsection-header"><h3>Projects</h3></div>
+                  <div class="subsection-body">
+                    <p>
+                      This website was originally made when I was in high school and applying to colleges for game design. I didn't actually know I needed a portfolio when I was applying, and I had so little money that I couldn't host a domain. So, I opened up a GitHub Pages repo on my school-issued Chromebook and started to read the HTML documentation. HTML isn't a hard language by any means; it's barely even a language, but the circumstances of this website's creation were somewhat notable. No school-issued Chromebook will let you use a code editor, and I was on such a time crunch that I could only work on the portfolio during my thirty-minute lunch break and in between periods. So I had to push code I barely understood to the repository each time I wanted to test it, and I could only do it a couple of times before college admissions officers would be looking at it. This project taught me that I could build useful products even without the proper tools, and it was one of the first times that I really had to learn to be adaptable as a developer.
+                    </p>
+                    <p class="mb-0">
+                      I was hired by Wyrd Games to build an AI tool for their IP, Malifaux, designed to streamline information about the system to onboard new players. This was my first experience with MCP (Model Context Protocol), which is basically a custom-built AI. It ran off a local Ollama build with a Python data processor on top, underneath a React frontend for ease of access. Freelance coding work like that is a really amazing workflow for me, because it allows me to have a hand in a lot of different projects. I've done a few different freelance projects and internships, including some work at Verdant AI, where I did data transfer work on a healthcare database.
+                    </p>
+                  </div>
+                </div>
+                <div class="row g-3">
+                  <div class="col-6">
+                    <img src="visuals/Screenshot 2023-12-28 204543.png" class="img-fluid rounded" alt="Inhuman Scripts and Repositories">
+                  </div>
+                  <div class="col-6">
+                    <img src="visuals/Screenshot 2023-12-28 204414.png" class="img-fluid rounded" alt="Inhuman Scripts and Repositories">
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <img src="visuals/Screenshot_20240114_043524_Discord.jpg" class="img-fluid rounded" alt="TempoBot and ScavengerBot Help Menu and Functions">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ===================== INHUMAN ===================== -->
+        <div id="inhuman" class="section-card">
+          <div class="section-header">
+            <h2>Inhuman</h2>
+            <p>COVID-19 gamedev debut — Unity, C#, custom movement controller</p>
+          </div>
+          <div class="section-body">
+            <div class="subsection-card mb-3">
+              <div class="subsection-header"><h3>Background</h3></div>
+              <div class="subsection-body">
+                <p>
+                  As I began to ease into the world of game development, my first big project was called Inhuman. It was a project I did to satisfy the International Baccalaureate 10th-grade Personal Project. Ultimately, the project ended up being sort of a wreck for all the reasons that junior developers mess up projects. I thought it was important to put in this portfolio to show the mistakes that I've already learned from.
+                </p>
+                <p>
+                  Inhuman was a game that stemmed from a series of short stories, comic books, and animations that I had been writing for over ten years. The goal was to make an online superhero game where you could switch between a huge number of superpowers on the fly while going through a story mode. It was a project I had been thinking about for years and years, and a project that no first-time game developer had any business undertaking.
+                </p>
+                <p class="mb-0">
+                  Inhuman was written in the Unity Engine in C#, and used a completely custom movement controller with hand-made animations. I also made some primitive assets for the story animation. While trying to build something like this was an excellent experience for me that I still draw on ("Inhuman Entertainment" is named for this project), it was still an insane amount of scope creep to have on a project, and I ultimately never finished it. Below you can see some of the early images from the Inhuman development. I hope to go back to it someday after working on some other projects and getting some more experience (see the ongoing "Space Toboggan!"), so I'll refrain from sharing some of the story elements. The current design document is over 40,000 words, which technically classifies it as a novella.
+                </p>
+              </div>
+            </div>
+
+            <div class="row g-3 mb-3">
+              <div class="col-md-4">
+                <img src="visuals/unknown-11.png" class="img-fluid rounded" alt="Character Asset">
+              </div>
+              <div class="col-md-5">
+                <img src="visuals/Screenshot 2023-08-27 133932.png" class="img-fluid rounded" alt="Level Design (Inhuman)">
+              </div>
+              <div class="col-md-3">
+                <img src="visuals/Screenshot 2022-03-17 201910.png" class="img-fluid rounded" alt="Inhuman Art">
+              </div>
+            </div>
+
+            <div class="row g-3">
+              <div class="col-md-6">
+                <img src="visuals/unknown-9.png" class="img-fluid rounded" alt="First Controller with Physics">
+              </div>
+              <div class="col-md-6">
+                <img src="visuals/20210806_002747.jpg" class="img-fluid rounded" alt="The Murder Board — Inhuman skill tree ideas">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ===================== SPACE TOBOGGAN ===================== -->
+        <div id="space-toboggan" class="section-card">
+          <div class="section-header">
+            <h2>Space Toboggan</h2>
+            <p>Experimental co-op arcade game — ongoing</p>
+          </div>
+          <img src="visuals/Screenshot_20240122_003136_Gallery.jpg" class="img-fluid w-100" alt="Toboggan Header" style="display:block;">
+          <div class="section-body">
+            <div class="subsection-card mb-3">
+              <div class="subsection-header"><h3>Overview</h3></div>
+              <div class="subsection-body">
+                <p>
+                  Space Toboggan! is an experimental arcade game designed to bring players the cooperative experience of the starship Enterprise with the speed of old-school Atari games. Players each inhabit a "role" on the same ship in order to work together, dodging asteroids while attempting to outrun the interplanetary police.
+                </p>
+                <p class="mb-0">
+                  Each of the three roles on your ship is different and equally crucial. The game is designed to challenge the trend in modern gaming of creating solitary experiences by leaning into a hyper-cooperative gameplay loop. Space Toboggan! will be available in two different builds: "At-Home Edition" and "Original".
+                </p>
+              </div>
+            </div>
+
+            <div class="row g-3 mb-3">
+              <div class="col-md-6">
+                <div class="subsection-card">
+                  <div class="subsection-header"><h3>At-Home Edition</h3></div>
+                  <div class="subsection-body">
+                    <p class="mb-0">
+                      The concept for Space Toboggan comes from two of my favorite games of all time. Artemis Spaceship Bridge Simulator is a game I picked up at a Dungeons and Dragons convention. The game consists of a group of people on local multiplayer, ideally played in a large room like how it was structured at the convention, with each person adopting a role on a spaceship similar to Star Trek. The result is a bunch of people all shouting across the room to each other to work in symbiosis to execute trades, engage in combat, and fly through the stars. As I played, I watched the ship creep across the stage, oftentimes having nothing to do in a specific role. I wondered if there was a way to cut out the fat to make a more engaging experience.
+                    </p>
+                  </div>
+                </div>
+                <img src="visuals/Screenshot 2024-01-22 000445.png" class="img-fluid rounded mt-2" alt="Artemis Steam Page">
+              </div>
+              <div class="col-md-6">
+                <div class="subsection-card">
+                  <div class="subsection-header"><h3>Original</h3></div>
+                  <div class="subsection-body">
+                    <p class="mb-0">
+                      The other massive influence was an arcade game from the 80s, Tempest. Tempest has been perhaps my favorite arcade game of all time since I first found a cabinet in elementary school. I actually played so much that I would get into high score competitions with my boss while I worked in the comic shop. I bought a Tempest shirt and wore it until it was destroyed. I love the game, and I know it well. To explain, Tempest is a shooter game where the player looks down a tube and has to shoot incoming enemies. It's a fast paced game, and when thinking about ways to counter the slow aspects of the Artemis experience, it wasn't long before I thought of Tempest.
+                    </p>
+                  </div>
+                </div>
+                <img src="visuals/maxresdefault.jpg" class="img-fluid rounded mt-2" alt="Tempest!">
+              </div>
+            </div>
+
+            <div class="row g-3 mb-3">
+              <div class="col-md-4">
+                <div class="subsection-card">
+                  <div class="subsection-header"><h3>Chute</h3></div>
+                  <div class="subsection-body">
+                    <p class="mb-0">
+                      To approach the piloting aspect of the game, I designed a very small game called "chute" which had a little pilot controller that careened down a procedurally generated tunnel (a chute). This was to prove that I could build a good piloting system and use some procedural generation elements that would come in handy for the arcade elements.
+                    </p>
+                  </div>
+                </div>
+                <img src="visuals/TubeScreenshot.png" class="img-fluid rounded mt-2 mb-2" alt="Chute Demo">
+                <img src="visuals/Sparrow_Reference_Board.png" class="img-fluid rounded" alt="Spaceship Reference">
+              </div>
+              <div class="col-md-4">
+                <div class="subsection-card">
+                  <div class="subsection-header"><h3>Spinner</h3></div>
+                  <div class="subsection-body">
+                    <p class="mb-0">
+                      To approach the second role, the gunner, I decided to build a game where you sat in a turret and shot at objects in the sky. You could spin the turret around the base for different aim, a proof of concept for the idea I had for the gunner seat where you did something similar attached to the pilot seat.
+                    </p>
+                  </div>
+                </div>
+                <img src="visuals/20240121_204906.jpg" class="img-fluid rounded mt-2" alt="Spinner">
+              </div>
+              <div class="col-md-4 d-flex flex-column gap-3">
+                <div class="subsection-card">
+                  <div class="subsection-header"><h3>Character Selector</h3></div>
+                  <div class="subsection-body">
+                    <p class="mb-0">
+                      The third "game" I sketched was much less flamboyant but one of the most technically challenging. In order to understand how to make and manage a multiplayer class system, I designed a small game in which you could join a lobby and select a role. That role would simply change the color of your capsule, which had a default first person controller. If someone was already the role you were trying to select, it would show that as well. To create a multiplayer game in which someone selects a role is great practice to expedite implementation in the final product.
+                    </p>
+                  </div>
+                </div>
+                <div class="subsection-card">
+                  <div class="subsection-header"><h3>Cutscenes and UI/UX</h3></div>
+                  <div class="subsection-body">
+                    <p class="mb-0">
+                      While I was working on the development of these smaller projects, I began to design some UI/UX aspects and commission some art by the same friend who did Inhuman. I have some of the early drafts of my concepts for the art already posted. I also started preproduction for a cutscene that will play before the game, which I decided would be in real life, writing a script and shot list.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="subsection-card">
+              <div class="subsection-header"><h3>Next Steps</h3></div>
+              <div class="subsection-body">
+                <p>
+                  In order to launch Space Toboggan successfully, I still need to formally announce the game, which I have been hesitant to do until I can devote some proper time to its completion. Once announced, I will do a fair amount of publicity for it within my budget constraints. After all three of the small games are done, which they are not (Chute is complete and development of Spinner is ongoing), I will implement the systems in the final product which will lay out a solid framework I can iterate on. At that point, a lot of production will be complete.
+                </p>
+                <p class="mb-0">
+                  One of the next big steps for the development of this project is to change the name.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ===================== WHEREHAVEIBEEN ===================== -->
+        <div id="wherehaveibeen" class="section-card">
+          <div class="section-header">
+            <h2>WhereHaveIBeen</h2>
+            <p>Forza Horizon lobby in real life</p>
+          </div>
+          <div class="section-body">
+            <p>empty (but don't delete it!)</p>
+          </div>
+        </div>
+
+        <!-- ===================== PROJECT CARS ===================== -->
+        <div id="project-cars" class="section-card">
+          <div class="section-header">
+            <h2>Project Cars</h2>
+            <p>Turning real wrenches</p>
+          </div>
+          <div class="section-body">
+            <p>empty (but don't delete it!)</p>
+          </div>
+        </div>
+
+        <!-- Back to Top -->
+        <div class="text-center py-4">
+          <a href="#top" class="btn btn-primary">You've reached the bottom! Wanna do it again?</a>
+        </div>
+
+      </div>
+      <!-- End Main Content -->
+
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/f82f770130.js" crossorigin="anonymous"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const header = document.getElementById('site-header');
+      const height = header.getBoundingClientRect().height;
+      document.documentElement.style.setProperty('--header-height', height + 'px');
+    });
+  </script>
+
+</body>
 </html>
